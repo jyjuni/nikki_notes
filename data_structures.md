@@ -21,7 +21,7 @@ reverse a list in python:
 
 ## list comprehension
 
-> 全部elements
+> all elements
 
 ```[1 if condition else 0 for x in sequence)]```
 
@@ -31,15 +31,22 @@ reverse a list in python:
 
 
 ## dict
-> #508
+#508
+
 ### sort dictionary by value:
+> sort dictionary, return [(k,v)] list, descending
+
+```python
+d = sorted(d.items(), key=lambda x:x[1], reverse=True)
 ```
-# sort dictionary, return [(k,v)] list
-d = sorted(d.items(), key=lambda x:x[1]) 
-# sort by value, return list of keys
-d = sorted(d, key=d.get) 
-# OrderedDict
-collections.OrderedDict: preserve insertion key ordering
-# SortedDict
-sortedcontainers.SortedDict: preserve key ordering
-```
+
+> sort by value, return list of keys
+
+```d = sorted(d, key=d.get, reverse=True) ```
+
+> OrderedDict
+
+```collections.OrderedDict: preserve insertion key ordering```
+> SortedDict
+
+```sortedcontainers.SortedDict: preserve key ordering```
