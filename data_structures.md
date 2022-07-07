@@ -42,11 +42,31 @@ d = sorted(d.items(), key=lambda x:x[1], reverse=True)
 
 > sort by value, return list of keys
 
-```d = sorted(d, key=d.get, reverse=True) ```
+```python
+d = sorted(d, key=d.get, reverse=True) 
+```
 
 > OrderedDict
 
-```collections.OrderedDict: preserve insertion key ordering```
+```python
+collections.OrderedDict: preserve insertion key ordering
+```
 > SortedDict
 
-```sortedcontainers.SortedDict: preserve key ordering```
+```
+sortedcontainers.SortedDict: preserve key ordering
+```
+
+## Counter
+> Sort by descending first. Elements with equal counts are ordered in the order first encountered
+```python
+from collections import Counter
+# count
+>>> Counter({3: 3, 2: 2, 4: 2})
+[2,2,3,3,3,4,4]
+
+# top n most common pairs
+>>> Counter({3: 3, 2: 2, 4: 2}).most_common(1)
+[('3', 3)]`
+
+```
