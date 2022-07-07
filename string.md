@@ -11,7 +11,6 @@ https://stackoverflow.com/questions/22789392/str-isdecimal-and-str-isdigit-diffe
 
 
 ## list
-
 reverse a list in python:
 1. l.reverse()
      inplace and do not cost extra mem
@@ -20,10 +19,21 @@ reverse a list in python:
 3. l[::-1]
      use slicing and create a shallow copy, is faster, less readable
 
-## dict + sortedcontainers
-#508
+## list comprehension
+
+> 全部elements
+
+```[1 if condition else 0 for x in sequence)]```
+
+> with elements that satisfy if conditions only
+
+```[f(x) for x in sequence if condition]```
+
+
+## dict
+> #508
+### sort dictionary by value:
 ```
-sort dictionary by value:
 # sort dictionary, return [(k,v)] list
 d = sorted(d.items(), key=lambda x:x[1]) 
 # sort by value, return list of keys
