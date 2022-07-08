@@ -36,9 +36,7 @@ reverse a list in python:
 ### sort dictionary by value:
 > sort dictionary, return [(k,v)] list, descending
 
-```python
-d = sorted(d.items(), key=lambda x:x[1], reverse=True)
-```
+```python d = sorted(d.items(), key=lambda x:x[1], reverse=True)```
 
 > sort by value, return list of keys
 
@@ -53,7 +51,7 @@ collections.OrderedDict: preserve insertion key ordering
 ```
 > SortedDict
 
-```
+```python
 sortedcontainers.SortedDict: preserve key ordering
 ```
 
