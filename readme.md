@@ -2,12 +2,12 @@
 
 ## 算法
 
-**基础数据结构**
+### 基础数据结构
 
 + [数据结构](algorithm/data_structures.md)
 + [链表](algorithm/linked_list.md)
 
-**算法**
+### 算法
 
 + [双指针](algorithm/double_pointers.md)
 + [滑动窗口](algorithm/sliding_windows.md)
@@ -16,38 +16,39 @@
 + [单调队列](algorithm/)
 + [合并区间](algorithm/merge_intervals.md)
 
-**树/图**
+### 树/图
 
 + [二叉树](algorithm/tree.md)
 + [并查集](algorithm/)
 
-**搜索算法**
+### 搜索算法
 
 + [二分搜索](algorithm/bisect.md)
 
 + [dfs](algorithm/dfs.md)
 + [bfs](algorithm/bfs.md)
 
-**动态规划**
+### 动态规划
 
 + [动态规划](algorithm/dp.md)
 
-**其他**
+### 其他
 
 + [trie树](algorithm/trie_tree.md)
 + [线段树](algorithm/segment_tree.md)
 
-**专题**
+### 专题
+
 + [子数组和子序列问题](algorithm/sub_array.md)
 
 ## 机器学习
-#### **机器学习基础**
+### **机器学习基础**
 
 - [梯度下降](ml/gd.md)
 
 - [预测](ml/predictions.md)
 
-#### **算法与模型**
+### **算法与模型**
 
 **无监督学习**
 
@@ -68,12 +69,12 @@
 
 ## NLP
 
-#### **NLP基础**
+### **NLP基础**
 
 - n-gram
 - RNN and LSTM
 
-#### **算法与应用场景**
+### **算法与应用场景**
 
 - attention
 - transformer
@@ -81,12 +82,12 @@
 
 ## CV
 
-#### **CV基础**
+### **CV基础**
 
 - [卷积](ml/convolution.md)
 - CNN
 
-#### **算法与应用场景**
+### **算法与应用场景**
 
 - [Object Detection](ml/object_detection.md)
 - Object Segmentation
@@ -99,8 +100,13 @@
 
 ## 推荐系统
 
+### **推荐系统基础**
+
 - 协同过滤
 - Matrix Factorization
 - FM/FFM
+
+### **算法与应用场景**
+
 - CTR问题
 - DeepCTR框架
