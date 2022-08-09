@@ -25,7 +25,7 @@
 
 `bisect.bisect_left`: 找insert index，相等时insert到左侧
 
-`bisect.bisect_right` 找insert index，相等时insert到右侧
+`bisect.bisect_right/bisect.bisect` 找insert index，相等时insert到右侧
 
 **+sortedcontainers.SortedList：**
 

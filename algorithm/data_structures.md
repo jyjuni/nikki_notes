@@ -1,6 +1,12 @@
 # 数据结构
 
 ## String
+### string functions
+
+`s.count()`: return total count of instances found in String s
+
+
+
 str:
 isnumeric > isdigit > isdecimal
 isdigit: numbers, superscript
@@ -9,9 +15,32 @@ isnumeric: numbers, superscript, fractions
 
 https://stackoverflow.com/questions/22789392/str-isdecimal-and-str-isdigit-difference-example 
 
+## Set
 
-## list
+### functions
+
+`set.add() `: add single element
+
+`set.update()`: add another iterable
+
+`set.union()`: union, not in-place
+
+> ` s1 = s1.union(s2) `same as ` s1.update(s2)`
+
+
+
+## List
+
+### functions
+
+`l.count()`: return total count of instances found in List l
+
+
+
+### reverse a list
+
 reverse a list in python:
+
 1. l.reverse()
      inplace and do not cost extra mem
 2. list(reversed(l))
@@ -19,7 +48,9 @@ reverse a list in python:
 3. l[::-1]
      use slicing and create a shallow copy, is faster, less readable
 
-## list comprehension
+### list comprehension
+
+#### if
 
 > all elements
 
@@ -28,6 +59,10 @@ reverse a list in python:
 > with elements that satisfy if conditions only
 
 ```[f(x) for x in sequence if condition]```
+
+#### 双重循环
+
+`[e for l in grid for e in l]`
 
 
 ## dict
@@ -70,3 +105,46 @@ from collections import Counter
 [('3', 3)]`
 
 ```
+
+
+
+## Itertools
+
+> permutation：排列对（无放回）
+
+```
+ permutations('ABCD', 2)
+ >>> AB AC AD BA BC BD CA CB CD DA DB DC
+```
+
+> combinations：组合对（无放回） 
+>
+> [593. 有效的正方形](https://leetcode.cn/problems/valid-square/) 
+
+```python
+combinations('ABCD', 2)
+>>> AB AC AD BC BD CD
+```
+
+> pairwise: 相邻的对（比如构建邻接表）
+>
+>  [444. 序列重建](https://leetcode.cn/problems/sequence-reconstruction/) 
+
+```python
+pairwise('ABCDEFG') 
+>>> AB BC CD DE EF FG
+```
+
+> product: 笛卡尔积
+
+```python
+product('ABCD', 'xy') 
+>>> Ax Ay Bx By Cx Cy Dx Dy
+
+product('ABCD', repeat=2) # self X self
+>>> AA AB AC AD BA BB BC BD CA CB CC CD DA DB DC DD
+
+product(range(2), repeat=3) # self X self X self
+>>> 000 001 010 011 100 101 110 111
+```
+

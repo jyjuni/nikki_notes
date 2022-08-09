@@ -1,5 +1,9 @@
 # trie树
 
+### 实现
+
+[leetcode notes](https://leetcode.cn/problems/replace-words/solution/by-ac_oier-jecf/)
+
 I. 二维数组实现
 
 ```
@@ -84,7 +88,23 @@ class Solution {
 
 
 
-作者：AC_OIer
-链接：https://leetcode.cn/problems/replace-words/solution/by-ac_oier-jecf/
-来源：力扣（LeetCode）
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+----
+
+[Lfool's note on Trie Tree](https://lfool.github.io/LFool-Notes/algorithm/%E8%AF%A6%E8%A7%A3%E5%89%8D%E7%BC%80%E6%A0%91TrieTree.html)
+
+## 例题
+
+[729. 我的日程安排表 I](https://leetcode.cn/problems/my-calendar-i/)
+
+[731. 我的日程安排表 II](https://leetcode.cn/problems/my-calendar-ii/)
+
+[732. 我的日程安排表 III](https://leetcode.cn/problems/my-calendar-iii/)
+
+[715. Range 模块](https://leetcode.cn/problems/range-module/)
+
+[307. 区域和检索 - 数组可修改](https://leetcode.cn/problems/range-sum-query-mutable/)
+
+[933. 最近的请求次数](https://leetcode.cn/problems/number-of-recent-calls/)
+
+[699. 掉落的方块](https://leetcode.cn/problems/falling-squares/)
+

@@ -1,11 +1,14 @@
-# 线段树 
-## Template
+#!/usr/bin/python
+# -*- coding:utf-8 -*-
 
-[reference](https://lfool.github.io/LFool-Notes/algorithm/%E7%BA%BF%E6%AE%B5%E6%A0%91%E8%AF%A6%E8%A7%A3.html)
+"""SegmentTreeDynamic.py: 线段树代码template(动态开点)"""
 
-### **lazy propagation+动态开点**
+__author__ = "Yijia Jin"
+__copyright__ = "Copyright 2022, Yijia Jin"
+__version__ = "1.0.0"
+__email__ = "yj2682@columbia.edu"
 
-```python
+
 class Node:
     def __init__(self, val=0):
         self.left = None
@@ -13,19 +16,20 @@ class Node:
         self.val = val
         self.add = 0
     
-class SegmentTreeDynamic: #直接用指定class覆盖
+class SegmentTreeDynamic:
 
     def __init__(self):
         self.N = 0
         self.root = Node(0)
-       
-   	# def XXX(self, start, end):
+    
+    
+    # def someresultfunction(self, start, end):
     #     if self.query(self.root, 0, self.N, (start, end-1)) >= 2:
     #         return False
     #     self.update(self.root, 0, self.N, (start, end-1), 1)
     #     return True
     
-    ## *******************TEMPLATE START*******************
+    
     def update(self, node, start, end, update_range, val):
         
         # [start, end] included completely in update range
@@ -107,35 +111,77 @@ class SegmentTreeDynamic: #直接用指定class覆盖
 
         # clear lazy add
         node.add = 0
+    
+# display the binary tree structure
+def display(node):
+    def display_aux(node):
+        """Returns list of strings, width, height, and horizontal coordinate of the root."""
+        # None node
+        if not node:
+            return None
         
-    ## *******************TEMPLATE END*******************
+        # No child.
+        if node.right is None and node.left is None:
+            line = f'{node.val}'
+            width = len(line)
+            height = 1
+            middle = width // 2
+            return [line], width, height, middle
 
-```
+        # Only left child.
+        if node.right is None:
+            lines, n, p, x = display_aux(node.left)
+            s = '%s' % node.val
+            u = len(s)
+            first_line = (x + 1) * ' ' + (n - x - 1) * '_' + s
+            second_line = x * ' ' + '/' + (n - x - 1 + u) * ' '
+            shifted_lines = [line + u * ' ' for line in lines]
+            return [first_line, second_line] + shifted_lines, n + u, p + 2, n + u // 2
+
+        # Only right child.
+        if node.left is None:
+            lines, n, p, x = display_aux(node.right)
+            s = '%s' % node.val
+            u = len(s)
+            first_line = s + x * '_' + (n - x) * ' '
+            second_line = (u + x) * ' ' + '\\' + (n - x - 1) * ' '
+            shifted_lines = [u * ' ' + line for line in lines]
+            return [first_line, second_line] + shifted_lines, n + u, p + 2, u // 2
+
+        # Two children.
+        left, n, p, x = display_aux(node.left)
+        right, m, q, y = display_aux(node.right)
+        s = '%s' % node.val
+        u = len(s)
+        first_line = (x + 1) * ' ' + (n - x - 1) * '_' + s + y * '_' + (m - y) * ' '
+        second_line = x * ' ' + '/' + (n - x - 1 + u + y) * ' ' + '\\' + (m - y - 1) * ' '
+        if p < q:
+            left += [n * ' '] * (q - p)
+        elif q < p:
+            right += [m * ' '] * (p - q) 
+        zipped_lines = zip(left, right)
+        lines = [first_line, second_line] + [a + u * ' ' + b for a, b in zipped_lines]
+        return lines, n + m + u, max(p, q) + 2, n + u // 2
+
+    lines, *_ = display_aux(node)
+    for line in lines:
+        print(line)
+
+if __name__ == "__main__":
+    
+    ## FOR TESTING ONLY
+    
+    tree = SegmentTreeDynamic()
+
+    start, end = 1,3
+    N = 10
+    
+    # 先查询该区间是否已有值（参考732. 我的日程安排表I）
+    if tree.query(tree.root, 0, N, (start, end)) != 0:
+        print(f"range overlapped: {(start, end)}")
+    else:
+        tree.update(tree.root, 0, N, (start, end), 1)
+        display(tree.root)
+        print(f"query for range {(start, end)}: {tree.query(tree.root, 0, N, (start, end))}")
 
 
-
-## 例题
-
-### 我的日程安排表I~III
-
-[729. 我的日程安排表 I](https://leetcode.cn/problems/my-calendar-i/)
-
-[731. 我的日程安排表 II](https://leetcode.cn/problems/my-calendar-ii/)
-
-[732. 我的日程安排表 III](https://leetcode.cn/problems/my-calendar-iii/)
-
-### 区域和检索（数组不可变、数组可变、二维可变）
-
-[303. 区域和检索 - 数组不可变](https://leetcode.cn/problems/range-sum-query-immutable/) 
-
-[307. 区域和检索 - 数组可修改](https://leetcode.cn/problems/range-sum-query-mutable/)
-
-[308. 二维区域和检索 - 可变](https://leetcode.cn/problems/range-sum-query-2d-mutable/) 
-
-### 其他
-
-[715. Range 模块](https://leetcode.cn/problems/range-module/)
-
-[933. 最近的请求次数](https://leetcode.cn/problems/number-of-recent-calls/)
-
-[699. 掉落的方块](https://leetcode.cn/problems/falling-squares/)

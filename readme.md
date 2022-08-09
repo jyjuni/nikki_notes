@@ -15,11 +15,15 @@
 + [堆（优先队列）](algorithm/heap.md)
 + [单调队列](algorithm/)
 + [合并区间](algorithm/merge_intervals.md)
++ [贪心算法](algorithm/greedy.md)
 
 ### 树/图
 
 + [二叉树](algorithm/tree.md)
-+ [并查集](algorithm/)
++ [并查集](algorithm/disjoint_set.md)
++ [拓扑排序](algorithm/topological_sort.md)
++ [最小生成树(Kruskal/Prim)](algorithm/mst.md)
++ [最短路径(Dijkstra)](algorithm/dijkstra.md)
 
 ### 搜索算法
 
@@ -31,8 +35,12 @@
 ### 动态规划
 
 + [动态规划](algorithm/dp.md)
++ [前缀和](algorithm/prefix_sum.md)
++ [背包问题](algorithm/knapsack.md)
 
 ### 其他
+
+- [根据数据范围推测算法复杂度](algorithm/data_range.md)
 
 + [trie树](algorithm/trie_tree.md)
 + [线段树](algorithm/segment_tree.md)
@@ -40,9 +48,11 @@
 ### 专题
 
 + [子数组和子序列问题](algorithm/sub_array.md)
++ [数论](algorithm/number_theory.md)
++ [巧妙解法汇总](algorithm/tricks.md)
 
 ## 机器学习
-### **机器学习基础**
+### **基础知识**
 
 - [梯度下降](ml/gd.md)
 
@@ -55,41 +65,49 @@
 - KNN与Kmeans
 - 聚类
 - 降维
+- EM
 
 **监督学习**
 
 - 线性回归
-- 逻辑回归
+- [逻辑回归](ml/lr.md)
 - SVM
 - Decision Tree
 - [Random Forest](ml/rf.md)
 - GBDT
-
 - [XGBoost and LightGBM](ml/LGBM.md)
 
 ## NLP
 
 ### **NLP基础**
 
-- n-gram
-- RNN and LSTM
+- [naive-bayes](nlp/naive_bayes.md)
+
+- [n-gram](nlp/n_grams.md)
+- [word embedding](nlp/word_embedding.md)
+- [RNN and LSTM](nlp/rnn_lstm.md)
 
 ### **算法与应用场景**
 
-- attention
-- transformer
-- BERT
+- [ELMo](nlp/elmo.md)
+- [attention](nlp/attention.md)
+- [transformer](nlp/transformer.md)
+- [BERT](nlp/bert.md)
+- [XLNET](nlp/xlnet.md)
 
 ## CV
 
-### **CV基础**
+[W4732 Schedule - Google Sheets](https://docs.google.com/spreadsheets/d/1OL69xzW_WfOlRXM7qiLM8T_dejH72dZ7byvKzuD0e9c/edit#gid=0) 
 
-- [卷积](ml/convolution.md)
-- CNN
+### CV基础
+
+- [Convolution(卷积)](cv/convolution.md)
+- [CNN](cv/cnn.md)
+- [Fourier Transform(傅里叶变换)](cv/fourier_transform.md)
 
 ### **算法与应用场景**
 
-- [Object Detection](ml/object_detection.md)
+- [Object Detection](cv/object_detection.md)
 - Object Segmentation
 - YOLO
 - U-Net
@@ -97,11 +115,11 @@
 - Table Extraction
 
 
-
 ## 推荐系统
 
 ### **推荐系统基础**
 
+- 推荐系统综述
 - 协同过滤
 - Matrix Factorization
 - FM/FFM
@@ -110,3 +128,11 @@
 
 - CTR问题
 - DeepCTR框架
+
+## Misc
+
+[shell/linux bash](misc/bash.md)
+
+[GCP](misc/gcp.md)
+
+[python](misc/python.md)

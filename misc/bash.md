@@ -24,12 +24,34 @@ unzip filename.zip -d /path/to/directory #to specified directory
  tar -cvzf FILE XXX.tar.gz
 ```
 
+
+
 ### 查看folder大小
 
 [ref](https://unix.stackexchange.com/questions/67806/how-to-recursively-find-the-amount-stored-in-directory)
 
 ```bash
 du -sh /path/to/directory
+```
+
+
+
+### 安装package
+
+```bash
+# Ubuntu 18.04 or similar
+sudo apt-get install wget
+
+# CentOS 7
+sudo yum install wget
+```
+
+
+
+### 下载文件
+
+```bash
+wget https://wordpress.org/latest.zip
 ```
 
 
@@ -55,9 +77,7 @@ scp -i ~/.ssh/id_rsa_gcp jinyijia@34.125.200.143:/server/path/to/directory ./loc
 
 
 
-
-
-## gcp
+## gcp shell
 
 ```bash
 # start instance
@@ -68,16 +88,5 @@ gcloud compute instances stop instance-1
 
 # list all instances
 gcloud compute instances list
-```
-
-
-
-## jupyter
-
-**autoreload**
-
-```python
-%load_ext autoreload
-%autoreload 2
 ```
 

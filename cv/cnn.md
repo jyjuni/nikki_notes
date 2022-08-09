@@ -1,13 +1,3 @@
-# Convolution
-
-### Convolution
-
-
-
-### Max Pooling
-
->  eg: if cat nose exists in filter area
-
 ### Batch Normalization
 
 $$
@@ -33,8 +23,4 @@ $$
 ### Width vs Depth
 
 **Universal approximation theorem**: with sufficiently wide network and just one layer, you can appoximate any continuous function with arbitrary approximation error.
-
-
-
-
 
