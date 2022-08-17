@@ -401,7 +401,7 @@ deep: how many $W_i$
 
 [Tensorflow and deep learning - without a PhD - Google Slides](https://docs.google.com/presentation/d/1TVixw6ItiZ8igjp6U17tcgoFrLSaHWQmMOwjlgQY9co/edit#slide=id.g140797b42d_0_60) 
 
-[Batch Norm Explained Visually — How it works, and why neural networks need it | by Ketan Doshi | Towards Data Science](https://towardsdatascience.com/batch-norm-explained-visually-how-it-works-and-why-neural-networks-need-it-b18919692739)  
+[Batch Norm Explained Visually — How it works, and why neural networks need it - Towards Data Science](https://towardsdatascience.com/batch-norm-explained-visually-how-it-works-and-why-neural-networks-need-it-b18919692739)  
 
 [machine learning - Batch Normalization shift/scale parameters defeat the point - Cross Validated](https://stats.stackexchange.com/questions/272010/batch-normalization-shift-scale-parameters-defeat-the-point) 
 
