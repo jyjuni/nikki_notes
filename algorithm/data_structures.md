@@ -96,15 +96,14 @@ sortedcontainers.SortedDict: preserve key ordering
 > Sort by descending first. Elements with equal counts are ordered in the order first encountered
 
 ```python
-from collections import Counter
-# count
->>> Counter({3: 3, 2: 2, 4: 2})
-[2,2,3,3,3,4,4]
+ from collections import Counter
+ # count
+ >>> Counter({3: 3, 2: 2, 4: 2})
+ [2,2,3,3,3,4,4]
 
-# top n most common pairs
->>> Counter({3: 3, 2: 2, 4: 2}).most_common(1)
-[('3', 3)]
-
+ # top n most common pairs
+ >>> Counter({3: 3, 2: 2, 4: 2}).most_common(1)
+ [('3', 3)]
 ```
 
 
@@ -123,8 +122,8 @@ from collections import Counter
 > [593. 有效的正方形](https://leetcode.cn/problems/valid-square/) 
 
 ```python
-combinations('ABCD', 2)
->>> AB AC AD BC BD CD
+ combinations('ABCD', 2)
+ >>> AB AC AD BC BD CD
 ```
 
 > pairwise: 相邻的对（比如构建邻接表）
