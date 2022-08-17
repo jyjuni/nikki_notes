@@ -103,7 +103,7 @@ from collections import Counter
 
 # top n most common pairs
 >>> Counter({3: 3, 2: 2, 4: 2}).most_common(1)
-[('3', 3)]`
+[('3', 3)]
 
 ```
 
