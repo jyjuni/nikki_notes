@@ -6,9 +6,3 @@
 
 - people's perceptions are relative to their spoken language
 
-## Pooling
-
-### Max Pooling
-
->  eg: if cat nose exists in filter area
-

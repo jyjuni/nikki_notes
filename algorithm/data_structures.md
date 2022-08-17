@@ -94,6 +94,7 @@ sortedcontainers.SortedDict: preserve key ordering
 
 ## Counter
 > Sort by descending first. Elements with equal counts are ordered in the order first encountered
+
 ```python
 from collections import Counter
 # count
@@ -112,7 +113,7 @@ from collections import Counter
 
 > permutation：排列对（无放回）
 
-```
+```python
  permutations('ABCD', 2)
  >>> AB AC AD BA BC BD CA CB CD DA DB DC
 ```

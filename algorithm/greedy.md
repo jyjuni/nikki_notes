@@ -6,6 +6,10 @@
 
 ## 例题
 
+### 加油问题
+
+ [Greedy Algorithms — The Car Fueling Problem | by Ayran Olckers | Medium](https://medium.com/@TheGeekiestOne/greedy-algorithms-the-car-fueling-problem-a35ccc9bb011) 
+
 ### 戳气球问题
 
 [435. 无重叠区间](https://leetcode.cn/problems/non-overlapping-intervals/) 

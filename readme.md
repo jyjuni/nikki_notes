@@ -13,7 +13,7 @@
 + [滑动窗口](algorithm/sliding_windows.md)
 + [排序算法](algorithm/sort.md)
 + [堆（优先队列）](algorithm/heap.md)
-+ [单调队列](algorithm/)
++ [单调队列](algorithm/mono_queue.md) 
 + [合并区间](algorithm/merge_intervals.md)
 + [贪心算法](algorithm/greedy.md)
 
@@ -47,9 +47,9 @@
 
 ### 专题
 
-+ [子数组和子序列问题](algorithm/sub_array.md)
-+ [数论](algorithm/number_theory.md)
-+ [巧妙解法汇总](algorithm/tricks.md)
++ [专题 - 子数组和子序列](algorithm/sub_array.md)
++ [专题 - 数论](algorithm/number_theory.md)
++ [专题 - 技巧汇总](algorithm/tricks.md)
 
 ## 机器学习
 ### **基础知识**
@@ -76,6 +76,7 @@
 - [Random Forest](ml/rf.md)
 - GBDT
 - [XGBoost and LightGBM](ml/LGBM.md)
+- [Tabnet](ml/tabnet.md)
 
 ## NLP
 

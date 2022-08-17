@@ -176,3 +176,16 @@ or:
 
 
 
+
+
+## Pooling
+
+### Max Pooling
+
+can think of cheap resize/nonlinear convolution
+
+gradient doesn't make sense
+
+> eg: if cat nose exists in filter area, don't care exactly where
+>
+> 
