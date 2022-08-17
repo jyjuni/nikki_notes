@@ -54,8 +54,8 @@
 ## 机器学习
 ### **基础知识**
 
+- [ml综述](ml/ml_basics.md)
 - [梯度下降](ml/gd.md)
-
 - [预测](ml/predictions.md)
 
 ### **算法与模型**

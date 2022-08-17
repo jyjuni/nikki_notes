@@ -30,7 +30,7 @@ teach machine to learn with examples(data):
 
 ## Regression Basics
 
-**Model:** $\hat{y} = f(x;\theta)$
+**Model:** $$\hat{y} = f(x;\theta)$$
 
 **Loss function:** $\mathscr{L}(\hat y, y)$
 
