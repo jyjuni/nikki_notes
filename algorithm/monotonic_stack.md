@@ -1,6 +1,6 @@
 # 单调栈
 
-
+<img src="monotonic_stack.assets/FCEzSnnUYAIt42h.png" alt="Monotonic Stack" style="zoom:30%;" />
 
 **单调栈**是对于数组中的*范围查询*(range query)问题的最佳时间复杂度解决方案。 因为数组中的每个元素只入栈一次，所以时间复杂度是O(N)，N 表示数组的长度。
 
@@ -73,6 +73,39 @@ class Solution:
                 d.append(i)
                 
         return total
+```
+
+ [654. 最大二叉树](https://leetcode.cn/problems/maximum-binary-tree/) 
+
+[image]
+
+常规解法是dfs按顺序构造，时间复杂度是$O(N^2)$：N个node，每个node求max
+
+因为和左、右节点位置和大小有关，这里可以采用单调栈解法，时间复杂度降低至$O(N)$。
+
+```python
+# 2. 单调栈
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def constructMaximumBinaryTree(self, nums: List[int]) -> Optional[TreeNode]:
+        stack = deque([]) #单调递减
+        for num in nums + [float('inf')]:
+            if not stack or stack[-1].val > num:
+                stack.append(TreeNode(num))
+            else:
+                prev = None #dummy占位
+                while stack and stack[-1].val < num: #弹出所有前面比num小的值
+                    cur = stack.pop()
+                    cur.right = prev # prev即上一个弹出的值，prev是cur右边<cur的最大值，所有更小值已经被弹出了，根据定义cur.right = prev
+                    prev = cur
+                stack.append(TreeNode(num, left=prev)) # 所有<num的值都被弹出了，现在prev是num左边>num的最小值，根据定义num.left = prev
+
+        return stack[0].left
 ```
 
 

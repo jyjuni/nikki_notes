@@ -35,17 +35,27 @@ https://stackoverflow.com/questions/22789392/str-isdecimal-and-str-isdigit-diffe
 
 `l.count()`: return total count of instances found in List l
 
+### copy
 
+**[shallow copy:](https://www.geeksforgeeks.org/copy-python-deep-copy-shallow-copy/)**
+
+1. `l.copy()`
+
+2. `l[:]`
+
+**deep copy:**
+
+`copy.deepcopy(l)`
 
 ### reverse a list
 
-reverse a list in python:
+**reverse a list in python:**
 
-1. l.reverse()
+1. `l.reverse()`
      inplace and do not cost extra mem
-2. list(reversed(l))
+2. `list(reversed(l))`
      not inplace
-3. l[::-1]
+3. `l[::-1]`
      use slicing and create a shallow copy, is faster, less readable
 
 ### list comprehension
@@ -64,8 +74,12 @@ reverse a list in python:
 
 `[e for l in grid for e in l]`
 
+same order as nested for loop
+
+eg:  [1470. 重新排列数组](https://leetcode.cn/problems/shuffle-the-array/submissions/) 
 
 ## dict
+
 [#508. 出现次数最多的子树元素和](https://leetcode.cn/problems/most-frequent-subtree-sum/)
 
 ### sort dictionary by value:

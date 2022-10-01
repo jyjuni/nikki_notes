@@ -9,11 +9,12 @@
 
 ### 算法
 
++ 哈希表
 + [双指针](algorithm/double_pointers.md)
 + [滑动窗口](algorithm/sliding_windows.md)
 + [排序算法](algorithm/sort.md)
 + [堆（优先队列）](algorithm/heap.md)
-+ [单调队列](algorithm/mono_queue.md) 
++ [单调队列](algorithm/monotonic_stack.md) 
 + [合并区间](algorithm/merge_intervals.md)
 + [贪心算法](algorithm/greedy.md)
 
@@ -49,14 +50,17 @@
 
 + [专题 - 子数组和子序列](algorithm/sub_array.md)
 + [专题 - 数论](algorithm/number_theory.md)
-+ [专题 - 技巧汇总](algorithm/tricks.md)
++ [专题 - tricks](algorithm/tricks.md)
 
 ## 机器学习
 ### **基础知识**
 
 - [ml综述](ml/ml_basics.md)
 - [梯度下降](ml/gd.md)
+- [优化](ml/opt.md)
 - [应用](ml/applications.md)
+- [损失函数](ml/losses.md)
+- [归一化和标准化](ml/normalizations.md)
 
 ### **算法与模型**
 
@@ -64,19 +68,28 @@
 
 - KNN与Kmeans
 - 聚类
-- 降维
+- [降维](ml/dim_reducing.md)
 - EM
 
 **监督学习**
 
 - 线性回归
 - [逻辑回归](ml/lr.md)
-- SVM
-- Decision Tree
+- [svm](ml/svm.md)
+- [Decision Tree](ml/trees.md)
 - [Random Forest](ml/rf.md)
 - GBDT
 - [XGBoost and LightGBM](ml/LGBM.md)
+
+**神经网络**
+
+- [Embedding](ml/embedding.md)
 - [Tabnet](ml/tabnet.md)
+- Residual Network
+
+##### **misc**
+
+[进化算法](ml/evolutionary_algo.md)
 
 ## NLP
 
@@ -86,7 +99,7 @@
 
 - [n-gram](nlp/n_grams.md)
 - [word embedding](nlp/word_embedding.md)
-- [RNN and LSTM](nlp/rnn_lstm.md)
+- [RNN and LSTM](nlp/rnn_lstm.md) [nlp notes]()
 
 ### **算法与应用场景**
 
@@ -108,7 +121,7 @@
 
 ### **算法与应用场景**
 
-- [Object Detection](cv/object_detection.md)
+- [Object Recognition](cv/object_recogniton.md)
 - Object Segmentation
 - YOLO
 - U-Net
@@ -122,13 +135,15 @@
 
 - 推荐系统综述
 - 协同过滤
-- Matrix Factorization
+- [Matrix Factorization](rec/mf.md)
 - FM/FFM
+- [推荐系统网络](rec/rec_with_nn.md)
 
 ### **算法与应用场景**
 
 - CTR问题
-- DeepCTR框架
+- DeepCTR
+- [双塔模型(Two-tower)](rec/two_tower.md)
 
 ## Misc
 
@@ -137,3 +152,5 @@
 [GCP](misc/gcp.md)
 
 [python](misc/python.md)
+
+[spark](misc/spark.md)

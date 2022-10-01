@@ -25,7 +25,7 @@ min = minHeap[0]
 
 #### maxHeap
 
-存-value
+存`-value`
 
 #### 自定义排序key
 

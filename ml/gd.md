@@ -28,4 +28,8 @@ Expectation: 一半的时间梯度不会为0
 ----
 *可能因为上述原因，在很多超大的神经网络中，存在很多“dead neurons”（权值一直为0）。但因为神经元数巨大，所以不造成影响。*
 
+## Batch GD vs SGD:
 
+![Screen Shot 2022-10-01 at 9.50.42 PM](gd.assets/Screen Shot 2022-10-01 at 9.50.42 PM.png)
+
+<img src="gd.assets/Screen Shot 2022-10-01 at 9.52.16 PM.png" alt="Screen Shot 2022-10-01 at 9.52.16 PM" style="zoom:50%;" />

@@ -187,7 +187,65 @@ class CBTInserter:
         return self.root
 ```
 
+ [662. 二叉树最大宽度](https://leetcode.cn/problems/maximum-width-of-binary-tree/) 
 
+本题难度在于模拟每个节点的位置（pos），同时也可以更直观的理解bfs分层遍历的结构。
+
+```python
+# bfs+模拟
+# 模拟每个节点的pos位置：
+# 左节点为2*pos, 右节点为2*pos+1
+
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+
+class Solution:
+    def widthOfBinaryTree(self, root: Optional[TreeNode]) -> int:
+        l = -1
+        q = deque([(root, 0)])    
+        max_len = 1    
+        while q:
+            l += 1 # below at level l
+            first = -1
+            for _ in range(len(q)):
+                cur, pos = q.popleft()
+                if first == -1:
+                    first = pos
+                if cur.left:
+                    q.append((cur.left, pos*2))
+                if cur.right:
+                    q.append((cur.right, pos*2+1))
+            
+            max_len = max(max_len, pos-first+1) #first是存的第一个，pos是最后一个
+        return max_len
+```
+
+优化：每次for循环前deque中存储的就是level l整层的节点，按从左到右的顺序且每个节点包含pos信息。因此可以直接利用deque中信息，不需要存储first，即：level l的宽度 = 队尾pos-队头pos+1。
+
+```python
+class Solution:
+    def widthOfBinaryTree(self, root: Optional[TreeNode]) -> int:
+        l = -1
+        q = deque([(root, 0)])    
+        max_len = 1    
+        while q:
+            l += 1 # below at level l
+            # 优化：当前q存的是level l整层的所有节点，可以直接利用，队尾pos-队头pos
+            max_len = max(max_len, q[-1][1]-q[0][1]+1)
+
+            for _ in range(len(q)):
+                cur, pos = q.popleft()
+                if cur.left:
+                    q.append((cur.left, pos*2))
+                if cur.right:
+                    q.append((cur.right, pos*2+1))
+            
+        return max_len
+```
 
 ### 图bfs
 

@@ -33,3 +33,8 @@
 %autoreload 2
 ```
 
+
+
+## reference
+
+ [11 Python Tricks To Show Off Your Advanced Skills | by Yang Zhou | TechToFreedom | Aug, 2022 | Medium](https://medium.com/techtofreedom/11-python-tricks-to-show-off-your-advanced-skills-4ea2d53a9f7c) 
