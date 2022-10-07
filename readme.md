@@ -61,6 +61,7 @@
 - [应用](ml/applications.md)
 - [损失函数](ml/losses.md)
 - [归一化和标准化](ml/normalizations.md)
+- [正则化](ml/regularization.md)
 
 ### **算法与模型**
 
@@ -78,14 +79,14 @@
 - [svm](ml/svm.md)
 - [Decision Tree](ml/trees.md)
 - [Random Forest](ml/rf.md)
-- GBDT
+- [GBDT](ml/dbdt.md)
 - [XGBoost and LightGBM](ml/LGBM.md)
 
 **神经网络**
 
 - [Embedding](ml/embedding.md)
-- [Tabnet](ml/tabnet.md)
-- Residual Network
+- [TabNet](ml/tabnet.md)
+- [Residual Network](cv/object_recogniton.md)
 
 ##### **misc**
 
@@ -95,19 +96,23 @@
 
 ### **NLP基础**
 
-- [naive-bayes](nlp/naive_bayes.md)
+- [naive-bayes](nlp/naive_bayes.md) [nlp notes](/Users/jinyijia/Desktop/W4705 NLP/notes/NLP 0709.md)
+- [n-gram](nlp/n_grams.md) [nlp notes](/Users/jinyijia/Desktop/W4705 NLP/notes/NLP 0711.md)
+- syntactic parsing
+  -  [nlp notes - earley parser](/Users/jinyijia/Desktop/W4705 NLP/notes/NLP 0713.md)
+  - [nlp notes - CKY parser](/Users/jinyijia/Desktop/W4705 NLP/notes/NLP 0718.md)
 
-- [n-gram](nlp/n_grams.md)
-- [word embedding](nlp/word_embedding.md)
-- [RNN and LSTM](nlp/rnn_lstm.md) [nlp notes]()
+- [word embedding and W2V](nlp/word_embedding.md) [nlp notes](/Users/jinyijia/Desktop/W4705 NLP/notes/NLP 0725.md)
+- [RNN and LSTM](nlp/rnn_lstm.md) [nlp notes](/Users/jinyijia/Desktop/W4705 NLP/notes/NLP 0727.md)
 
 ### **算法与应用场景**
 
-- [ELMo](nlp/elmo.md)
-- [attention](nlp/attention.md)
-- [transformer](nlp/transformer.md)
-- [BERT](nlp/bert.md)
+- [attention](nlp/attention.md) [nlp notes](/Users/jinyijia/Desktop/W4705 NLP/notes/NLP 0727.md)
+- [ELMo](nlp/elmo.md) [nlp notes](/Users/jinyijia/Desktop/W4705 NLP/notes/NLP 0801.md)
+- [transformer](nlp/transformer.md) [nlp notes](/Users/jinyijia/Desktop/W4705 NLP/notes/NLP 0801.md)
+- [BERT](nlp/bert.md) [nlp notes](/Users/jinyijia/Desktop/W4705 NLP/notes/NLP 0801.md)
 - [XLNET](nlp/xlnet.md)
+- [MT]() [nlp notes](/Users/jinyijia/Desktop/W4705 NLP/notes/NLP 0803.md)
 
 ## CV
 
@@ -122,11 +127,12 @@
 ### **算法与应用场景**
 
 - [Object Recognition](cv/object_recogniton.md)
-- Object Segmentation
-- YOLO
+- [YOLO](cv/yolo.md)
+- [DenseNet](cv/densenet.md)
 - U-Net
-- FCN
-- Table Extraction
+- [FCN](cv/fcn.md)
+- [Table Extraction](cv/table_net.md)
+- [OCR](cv/ocr.md)
 
 
 ## 推荐系统

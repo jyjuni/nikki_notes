@@ -22,13 +22,27 @@ $$
 $$
 *This is basically what "convolution" in CV does in practice, but in theory some properties, such as *associative property*, don't hold.  
 
-
-
 ### Properties
 
 
 
+### Dimensions
 
+ [filters - How to calculate the number of parameters of a convolutional layer? - Artificial Intelligence Stack Exchange](https://ai.stackexchange.com/questions/18663/how-to-calculate-the-number-of-parameters-of-a-convolutional-layer/18669#18669)
+
+<img src="convolution.assets/3folL.png" alt="3folL" style="zoom:50%;" />
+
+**input dimension** - $(H, W, D)$, $D$ is the depth
+
+**filter dimension** - $(F, F, D, M)$ this is the same as  $(F, F, M)$ because 3rd dimension is automatically infered from D
+
+**ouput dimension**: $(H', W', M)$
+
+$H' = floor(\frac{(H - F + 2P)}{S})+ 1$
+
+$W' = floor(\frac{(W - F + 2P)}{S})+ 1$
+
+**number of parameter:**  $D_{f} * (F * F * D_i) + D_f$, with one optional scaler bias term per filter 
 
 ## Filters
 

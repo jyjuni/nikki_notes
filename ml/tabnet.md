@@ -12,3 +12,48 @@
 
  [TabNet: The End of Gradient Boosting? | by Adam Shafi | Towards Data Science](https://towardsdatascience.com/tabnet-e1b979907694) 
 
+ [Talks # 4: Sebastien Fischman - Pytorch-TabNet: Beating XGBoost on Tabular Data Using Deep Learning - YouTube](https://www.youtube.com/watch?v=ysBaZO8YmX8) 
+
+## Architecture
+
+![image-20221007211748204](tabnet.assets/image-20221007211748204.png)
+
+### From Decision Tree to NN
+
+<img src="tabnet.assets/image-20221007211818282.png" alt="image-20221007211818282" style="zoom:50%;" /> <img src="tabnet.assets/image-20221007211826442.png" alt="image-20221007211826442" style="zoom:50%;" />
+
+使用神经网络模仿决策树机制 - 
+
+决策树：特征选择 + 条件（阈值）判断
+
+NN: 
+
+- mask-特征选择
+
+- FC+Relu：条件判断：通过选择特定的W和b，每条路径的输出向量中只有一个值是正，剩下的都为负（过Relu之后为0），这就很好的模仿了决策树向下走的过程。
+
+### Attention Transformer
+
+#### 
+
+### Feature Transformer
+
+2层共享特征步+2层独立特征步：
+
+- 共享特征：提升效率，因为输入的特征相同
+- 独立特征：差异性
+
+#### GLU
+
+ [GLU: Gated Linear Unit implementation | by Alvaro Durán Tovar | Deep Learning made easy | Medium](https://medium.com/deeplearningmadeeasy/glu-gated-linear-unit-21e71cd52081) 
+
+- 比ReLu稳定（小心Dead ReLu)
+- 比sigmoid损失降得快
+- gradient计算可以类比resNet：转换成两个gradient的加性计算，可能更好
+
+### Sequential Steps
+
+
+
+## Pre-trained
+

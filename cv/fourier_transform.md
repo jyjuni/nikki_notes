@@ -31,9 +31,9 @@ center is 0
 
 <img src="fourier_transform.assets/Screen Shot 2022-08-06 at 4.29.11 PM.png" alt="Screen Shot 2022-08-06 at 4.29.11 PM" style="zoom:50%;" />
 
-**amplitude**: center is (0,0). black is 0, white $\infin$.
+**振幅 amplitude**: center is (0,0). black is 0, white $\infin$.==频域？==
 
-**phase**: center is (0,0). grey is 0, white $\infin$, black $-\infin$.
+**相位phase**: center is (0,0). grey is 0, white $\infin$, black $-\infin$.
 
 - most information is stored in the phase
 - amplitude is usually similar
