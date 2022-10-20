@@ -144,6 +144,16 @@ Harmonic mean **punishes extreme values**
 >
 > 调和平均数 = 0
 
+f1优于accuracy的原因：在类别不平衡的情况下，f1更准确。f1使用调和平均数反映precision和recall的制衡，任一指标过低都会导致f1过低。
+
+> eg: 100 samples, 90 negative, 10 positive
+>
+> prediction: all negative
+>
+> accuracy = 0.9
+>
+> f1 = 0 because recall = 0
+
 ### **PR曲线**
 
 纵轴precision，横轴recall
@@ -174,10 +184,4 @@ PR只关心正例，ROC关心正例和负例
 
 类别不均衡的情况下使用ROC
 
-## 图像识别
-
-dice
-
-jaccard
-
-IoU
+> 

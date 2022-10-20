@@ -1,6 +1,87 @@
-# trie树
+# trie树（前缀树、字典树）
 
-### 实现
+## 结构
+
+### 存储
+
+边存储：每个字母
+
+节点存储：pass,end
+
+- 表达路：每个节点存next，数组或者哈希表、有序表
+
+- pass：经过这个节点的次数
+
+- end：在这个节点结束的次数
+
+> 可以理解为节点代表它上面的边组成的前缀
+>
+> eg: 根节点的p值含义 -- 有多少个字符串以空串为前缀==共有多少字符串
+
+### 查询
+
+怎么加入的就怎么查
+
+> pass - 有多少是以...为前缀的
+>
+> end - 有没有这个字符串
+
+查询之前加入过几个：
+
+- 如果能查到底：返回`end`
+- 如果查到一半路径不存在，返回`0`
+
+查询以...为前缀：
+
+- 如果查到一半路径不存在，返回`0`
+- 如果能查到底：返回`pass`
+
+### 删除
+
+1. 先search，确定存在再删
+
+2. 如果存在：沿途`pass--`，最后一个节点`end--`。遇到`pass`更新后变为`0`，整体释放(`=null`)。 
+
+```python
+class Trie:
+    def __init__(self):
+        self.children = [None] * 26
+        self.isEnd = False
+    
+    def searchPrefix(self, prefix: str) -> "Trie":
+        node = self
+        for ch in prefix:
+            ch = ord(ch) - ord("a")
+            if not node.children[ch]:
+                return None
+            node = node.children[ch]
+        return node
+
+    def insert(self, word: str) -> None:
+        node = self
+        for ch in word:
+            ch = ord(ch) - ord("a")
+            if not node.children[ch]:
+                node.children[ch] = Trie()
+            node = node.children[ch]
+        node.isEnd = True
+
+    def search(self, word: str) -> bool:
+        node = self.searchPrefix(word)
+        return node is not None and node.isEnd
+
+    def startsWith(self, prefix: str) -> bool:
+        return self.searchPrefix(prefix) is not None
+
+```
+
+
+
+
+
+
+
+## 实现
 
 [leetcode notes](https://leetcode.cn/problems/replace-words/solution/by-ac_oier-jecf/)
 
@@ -91,6 +172,8 @@ class Solution {
 ----
 
 [Lfool's note on Trie Tree](https://lfool.github.io/LFool-Notes/algorithm/%E8%AF%A6%E8%A7%A3%E5%89%8D%E7%BC%80%E6%A0%91TrieTree.html)
+
+
 
 ## 例题
 

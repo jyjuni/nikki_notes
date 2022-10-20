@@ -1,5 +1,9 @@
 # FCN 
 
+ [2014 Fully Convolutional Network (FCN) Paper summary - YouTube](https://www.youtube.com/watch?v=Ahge3GzQ3Kg&t=570s) 
+
+ [paper](https://arxiv.org/abs/1411.4038) 
+
 用于 pixel-wise semantic segmentation
 
 优势
@@ -33,6 +37,8 @@ as encoder gets deeper: input size smaller, number of feature maps/kernels gets 
 <img src="fcn.assets/Screen Shot 2022-10-05 at 5.56.51 PM.png" alt="Screen Shot 2022-10-05 at 5.56.51 PM" style="zoom:50%;" />
 
 <img src="fcn.assets/Screen Shot 2022-10-05 at 6.00.20 PM.png" alt="Screen Shot 2022-10-05 at 6.00.20 PM" style="zoom:50%;" />
+
+Operates on an input of any size, and produces and output of corresponding spatial dimensions.
 
 - encoder结束后不接flatten layer，改为$1*1*d_{out}$的conv layer
   - n_channel = $d_{out}$
@@ -69,7 +75,7 @@ interpolation with nn-interpolation/linear interpolation, then convolve
 
 - combine **coarse, global** information + **fine-grained, local** information
   - make local predictions that respect global structure
-- ==as they see fewer pixels,== the finer scale predictions should need fewer layers, so it makes sense to make them from shallower net outpus？ 
+- ==as they see fewer pixels,== the finer scale predictions should need fewer layers, so it makes sense to make them from shallower net output？ 
 
 ## result
 

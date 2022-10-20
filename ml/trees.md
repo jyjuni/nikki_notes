@@ -106,18 +106,17 @@ all nodes  identical attribute values
 
 1. 使用gain ratio（改进IG）
 
-   $$
-   Gain \ Ratio = \frac{IG}{split \ info} \\
+$$
+Gain \ Ratio = \frac{IG}{split \ info} \\
    
    split \ info = - \sum_{i=1}^c p(v_i) \log p(v_i)
-   $$
-   split info：分裂的熵（label = 每个分支值）作为分裂的惩罚项
+$$
 
-   分支数越多，split info越大，Gain Ratio越小
+split info：分裂的熵（label = 每个分支值）作为分裂的惩罚项
+
+分支数越多，split info越大，Gain Ratio越小
 
 2. 每个数值作为阈值，分为<=和>两类；遍历所有可能的阈值，选择作为阈值增益的IG作为该特征的IG，再和其他attribute的IG比较。
-
-
 
 优势：
 
@@ -152,7 +151,9 @@ Gini系数可以看做熵的一阶泰勒估计，减少大量的对数运算。
 
 - 对于一个二分类问题，节点 node 被分成类别 1 当且仅当：
 
-  $\frac{N_1(node)}{N_1(root) \frac{N_0(node)}{N_0(root)}$
+$$
+\frac{N_1(node)}{N_1(root) } > \frac{N_0(node)}{N_0(root)}
+$$
 
 > 比如二分类，根节点属于 1 类和 0 类的分别有 20 和 80 个。在子节点上有 30 个样本，其中属于 1 类和 0 类的分别是 10 和 20 个。如果 10/20>20/80，该节点就属于 1 类.
 >

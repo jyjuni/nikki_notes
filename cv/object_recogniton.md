@@ -8,6 +8,38 @@
 
 - people's perceptions are relative to their spoken language
 
+
+
+## Region Proposals
+
+tries to pick just a few regions that makes sense to run your continent crossfire.
+
+segmentation algorithm: find ~2000 blobs of potention interests
+
+**R-CNN:**
+
+Propose regions. classify proposed regions **one at a time**. output label + bounding box
+
+**Fast R-CNN:**
+
+Propose regions. use **convolution implementation** of sliding windows to classify all the proposed regions.
+
+(roughly similar to convolution implementation)
+
+**Faster R-CNN:**
+
+starting point: clustering step in Fast R-CNN to propose the regions are relatively slow
+
+use **convolutional network** to propose regions.
+
+*Faster R-CNN usually still quite slower than YOLO*
+
+> Andrew's notes on region proposal:
+>
+> I think that region proposal is an interesting idea by that not having two steps-- first propose region and then classify it--being able to do everything all at the same time, similar to the YOLO or the You Only Look Once algorithm that seems to me like a more promising direction for the long term. 
+
+
+
 ### R-CNN
 
 two stage pipeline: first classify where the interesting image regions are, then do a classification of each region
@@ -87,30 +119,6 @@ increase resolution
 
 **skip connections**: avoid bottleneck, propagate to same-resolution layers
 
-## Residual Network
-
-before ResNet: up to 20 layers
-
-after: thousands of layers possible
-
-<img src="object_recogniton.assets/Screen Shot 2022-08-21 at 4.02.46 PM.png" alt="Screen Shot 2022-08-21 at 4.02.46 PM" style="zoom:50%;" />
-
-**intuition**: 56-layer network should perform (in training error) at least  as good as 20-layer, because the rest 36 layers could learn to do nothing.
-
-<img src="object_recogniton.assets/Screen Shot 2022-08-21 at 4.04.48 PM.png" alt="Screen Shot 2022-08-21 at 4.04.48 PM" style="zoom:50%;" />
-
-**idea**: make it easy to learn to do nothing 
-
-- forward: F(·) can learn to output 0, many ways to do that. but without residual F(x) has only one way to propagate identity(hard to learn that as example above)
-
-- backwards: gradients split at plus gate, so even F(x) mess up with the gradient (eg: vanishes), x is still able to propagate the gradient back
-
-**note:** can only do resnet if input and output dimensions of residual block are same-size
-
-### Reversible Residual Network
-
-computational trick to save memory(trade time for space)
-
 
 
 # Deeplearning.ai
@@ -135,7 +143,44 @@ image -> ConvNet -> vector feature(n classes) -> softmax(n classes)
 
 
 
-### Convolutional Implementation
+### Convolutional Implementation(FCN)
+
+## Metrics for Object Detection 
 
 
 
+# Object Segmentation
+
+## Metrics for Object Segmentation
+
+Jaccard/IoU
+
+![Screen Shot 2022-10-15 at 11.41.58 AM](object_recogniton.assets/Screen Shot 2022-10-15 at 11.41.58 AM.png)
+
+Dice/f1
+
+![Screen Shot 2022-10-15 at 11.42.07 AM](object_recogniton.assets/Screen Shot 2022-10-15 at 11.42.07 AM.png)![Screen Shot 2022-10-15 at 11.42.28 AM](object_recogniton.assets/Screen Shot 2022-10-15 at 11.42.28 AM.png)
+
+ [terminology - F1/Dice-Score vs IoU - Cross Validated](https://stats.stackexchange.com/questions/273537/f1-dice-score-vs-iou/276144#276144)  
+
+IoU vs Dice:
+
+- similar performance, *always* positively correlated
+
+- IOU penalize single instances of bad classification more (squaring effect to errors similar to L2 more than L1
+
+  ⇒ F tends to measure close to average performance IOU tends to measure close to worst case performance 
+
+- for both: TP低的时候表现不佳
+
+eg:
+
+>  GT 1 pixels
+>
+> pred 2 pixels, include GT
+>
+> then:
+>
+> IoU = 1/2
+>
+> F1 = 2/3

@@ -42,7 +42,7 @@ test mAP 0.824
 
 ## TableNet
 
-######  [paper](https://arxiv.org/pdf/2001.01469.pdf)  [github repo](https://github.com/jyjuni/TableNet_Tesseract_OCR/) 
+####  [paper](https://arxiv.org/pdf/2001.01469.pdf)  [github repo](https://github.com/jyjuni/TableNet_Tesseract_OCR/) 
 
 two subtasks for table recognition 
 
@@ -58,6 +58,8 @@ two subtasks for table recognition
 **TableNet** - solves twin tasks end-to-end together 
 
 > exploit the interdependency of two tasks, column filter and table filter could reinforce each other
+
+![img](table_net.assets/1*goRSu7YaCn3Ef8uP7HQZCg.jpeg)
 
 #### **1. share encoder, seperate decoders：**
 

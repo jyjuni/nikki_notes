@@ -122,11 +122,11 @@ XGBoost用的是CART树
 
 $similarity = \frac{\text{sum of residuals, squared}}{\text{number of residuals} + \lambda}$
 
-$output value = \frac{\text{sum of residuals}}{\text{number of residuals} + \lambda}$
+$output \ value = \frac{\text{sum of residuals}}{\text{number of residuals} + \lambda}$
 
 lambda: regularization parameter, reduce the prediction's sensitivity to individual observations to prevent overfitting
 
-- smaller gain, 
+- smaller gain, s
 - easier to prune
 
 $prediction_{new} = prediction_{old} + \eta * value of node$
@@ -143,7 +143,27 @@ cover  - $\sum$ term
 
  [XGBoost Part 3 (of 4): Mathematical Details - YouTube](https://www.youtube.com/watch?v=ZVFeW798-2I) 
 
+<img src="LGBM.assets/Screen Shot 2022-10-08 at 12.41.04 PM.png" alt="Screen Shot 2022-10-08 at 12.41.04 PM" style="zoom:50%;" />
 
+<img src="LGBM.assets/Screen Shot 2022-10-08 at 12.42.08 PM.png" alt="Screen Shot 2022-10-08 at 12.42.08 PM" style="zoom:50%;" />
+
+<img src="LGBM.assets/Screen Shot 2022-10-08 at 12.42.32 PM.png" alt="Screen Shot 2022-10-08 at 12.42.32 PM" />
+
+<img src="LGBM.assets/Screen Shot 2022-10-08 at 12.42.41 PM-5205824.png" alt="Screen Shot 2022-10-08 at 12.42.41 PM" style="zoom:50%;" />
+
+
+
+<img src="LGBM.assets/Screen Shot 2022-10-08 at 12.42.52 PM.png" alt="Screen Shot 2022-10-08 at 12.42.52 PM" style="zoom:50%;" />
+
+
+
+Classification:
+
+<img src="LGBM.assets/Screen Shot 2022-10-08 at 12.43.25 PM.png" alt="Screen Shot 2022-10-08 at 12.43.25 PM" style="zoom:50%;" />![Screen Shot 2022-10-08 at 12.43.49 PM](LGBM.assets/Screen Shot 2022-10-08 at 12.43.49 PM.png)
+
+<img src="LGBM.assets/Screen Shot 2022-10-08 at 12.43.49 PM-5205833.png" alt="Screen Shot 2022-10-08 at 12.43.49 PM" style="zoom:50%;" />![Screen Shot 2022-10-08 at 12.44.03 PM](LGBM.assets/Screen Shot 2022-10-08 at 12.44.03 PM-5205838.png)
+
+<img src="LGBM.assets/Screen Shot 2022-10-08 at 12.44.03 PM-5205849.png" alt="Screen Shot 2022-10-08 at 12.44.03 PM" style="zoom:50%;" />
 
 ### XGBoost vs GBDT
 

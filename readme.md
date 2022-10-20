@@ -5,11 +5,13 @@
 ### 基础数据结构
 
 + [数据结构](algorithm/data_structures.md)
++ [哈希表](algorithm/hashmap.md)
 + [链表](algorithm/linked_list.md)
++ [二叉树](algorithm/tree.md)
++ 
 
 ### 算法
 
-+ 哈希表
 + [双指针](algorithm/double_pointers.md)
 + [滑动窗口](algorithm/sliding_windows.md)
 + [排序算法](algorithm/sort.md)
@@ -20,11 +22,12 @@
 
 ### 树/图
 
-+ [二叉树](algorithm/tree.md)
-+ [并查集](algorithm/disjoint_set.md)
+- [图](algorithm/graph.md)
+
 + [拓扑排序](algorithm/topological_sort.md)
 + [最小生成树(Kruskal/Prim)](algorithm/mst.md)
 + [最短路径(Dijkstra)](algorithm/dijkstra.md)
++ [并查集](algorithm/disjoint_set.md)
 
 ### 搜索算法
 
@@ -45,6 +48,9 @@
 
 + [trie树](algorithm/trie_tree.md)
 + [线段树](algorithm/segment_tree.md)
++ [位运算](algorithm/bit_ops.md)
++ [KMP](algorithm/kmp.md)
++ [Manacher](algorithm/manacher.md)
 
 ### 专题
 
@@ -79,7 +85,7 @@
 - [svm](ml/svm.md)
 - [Decision Tree](ml/trees.md)
 - [Random Forest](ml/rf.md)
-- [GBDT](ml/dbdt.md)
+- [GBDT](ml/gbdt.md)
 - [XGBoost and LightGBM](ml/LGBM.md)
 
 **神经网络**
@@ -121,7 +127,8 @@
 ### CV基础
 
 - [Convolution(卷积)](cv/convolution.md)
-- [CNN](cv/cnn.md)
+- [ConvNet](cv/conv_net.md)
+- [ResNet](cv/resnet.md)
 - [Fourier Transform(傅里叶变换)](cv/fourier_transform.md)
 
 ### **算法与应用场景**
@@ -144,12 +151,14 @@
 - [Matrix Factorization](rec/mf.md)
 - FM/FFM
 - [推荐系统网络](rec/rec_with_nn.md)
+- [向量化检索](rec/emb_search.md)
 
 ### **算法与应用场景**
 
 - CTR问题
 - DeepCTR
 - [双塔模型(Two-tower)](rec/two_tower.md)
+- [DeepFM](rec/deepfm.md)
 
 ## Misc
 
@@ -160,3 +169,4 @@
 [python](misc/python.md)
 
 [spark](misc/spark.md)
+
