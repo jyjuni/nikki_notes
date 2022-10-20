@@ -40,6 +40,7 @@ $$
 *Average number of extra bits to represent an event from Q instead of P.*
 
 KL散度即相对熵(relative entropy)，是两个概率分布之间差异的非对称性度量。相对熵等于两个信息熵的差值。
+
 $$
 \begin{align}
 p(x)分布信息熵： \\
@@ -55,6 +56,7 @@ $$
 #### 交叉熵
 
 *Average number of total bits to represent an event from Q instead of P.*
+
 $$
 H(p,q) = -\sum _{i=1} ^ n p(x_i) \log q(x_i) \\
 H(p,q) = H(p) + D_{KL}(p||q)
@@ -67,12 +69,14 @@ $$
 #### 交叉熵在二分类上的应用
 
 eg：逻辑回归
+
 $$
 L = - [y\log\hat y + (1-y)\log(1-\hat y)]
 $$
 交叉熵=-negative log-likelihood of Bernoulli
 
 因此最小交叉熵也可以理解为伯努利分布下的最大似然估计(MLE)
+
 $$
 \begin{align}
 P(y=1) & = \sigma(z) \\

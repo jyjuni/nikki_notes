@@ -8,7 +8,6 @@
 + [哈希表](algorithm/hashmap.md)
 + [链表](algorithm/linked_list.md)
 + [二叉树](algorithm/tree.md)
-+ 
 
 ### 算法
 
