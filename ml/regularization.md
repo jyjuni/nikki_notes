@@ -1,6 +1,6 @@
 # Regularization（正则化）
 
- [Regularization | Regularization Techniques in Machine Learning](https://www.analyticsvidhya.com/blog/2021/05/complete-guide-to-regularization-techniques-in-machine-learning/) 
+ [Regularization Techniques in Machine Learning](https://www.analyticsvidhya.com/blog/2021/05/complete-guide-to-regularization-techniques-in-machine-learning/) 
 
 ## overfitting
 
@@ -15,9 +15,7 @@ generalization error 泛化误差
 
 - adding a **penalty term** with Residual Sum of Squares (RSS)
 
-$$
-formula
-$$
+![L1 vs L2 Regularization: The intuitive difference](regularization.assets/1*-LydhQEDyg-4yy5hGEj5wA.png)
 
 - λ -  tuning parameter used in regularization that decides how much we want to penalize the flexibility of our model
 
@@ -60,11 +58,15 @@ limitation:
 将L1和L2正则化转换成约束函数限制下的等式求解：
 
 define constraint function:
+
+
 $$
 \beta_1^2 + \beta_2^2 \leq s \\ and  \\
 
 |\beta_1| + |\beta_2| \leq s
 $$
+
+
 Here, s is a constant which exists for each value of the shrinkage factor λ.
 
 <img src="https://miro.medium.com/max/1766/1*XC-8tHoMxrO3ogHKylRfRA.png" alt="maths" style="zoom:67%;" />
@@ -79,7 +81,7 @@ lasso: diamon constraint region with corners, often intersect at axes(one of the
 
 ### bias-variance tradeoff
 
-![Regularization and Geometry. I. Bias-Variance Tradeoff | by Minh Pham |  Towards Data Science](regularization.assets/1*EaLwMYXiXdB8iFQQigZPzw.png)
+![Regularization and Geometry. I. Bias-Variance Tradeoff](regularization.assets/1*EaLwMYXiXdB8iFQQigZPzw.png)
 
 underfitting - high bias, low variance
 

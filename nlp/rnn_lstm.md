@@ -31,7 +31,7 @@ A recurrent neural network can be thought of as **multiple copies of the *same* 
 
 - 梯度爆炸的问题出在**权重参数过大**
 
-![Derivation: Derivatives for Common Neural Network Activation Functions |  The Clever Machine](rnn_lstm.assets/common_activation_functions.png)
+![Derivation: Derivatives for Common Neural Network Activation Functions -  The Clever Machine](rnn_lstm.assets/common_activation_functions.png)
 
 ### 原因
 
@@ -134,7 +134,7 @@ short-term memory (上一个时间步输出)
 
 ### 关于LSTM改善梯度消失问题 
 
-[How LSTM networks solve the problem of vanishing gradients | by Nir Arbel | DataDrivenInvestor](https://medium.datadriveninvestor.com/how-do-lstm-networks-solve-the-problem-of-vanishing-gradients-a6784971a577) 
+[How LSTM networks solve the problem of vanishing gradients - by Nir Arbel - DataDrivenInvestor](https://medium.datadriveninvestor.com/how-do-lstm-networks-solve-the-problem-of-vanishing-gradients-a6784971a577) 
 
 原理：
 
@@ -145,7 +145,7 @@ short-term memory (上一个时间步输出)
 
  [GA（遗传算法）优化LSTM神经网络-CSDN博客](https://blog.csdn.net/Vertira/article/details/122403571) 
 
- [Choosing the right Hyperparameters for a simple LSTM using Keras | Towards Data Science](https://towardsdatascience.com/choosing-the-right-hyperparameters-for-a-simple-lstm-using-keras-f8e9ed76f046) 
+ [Choosing the right Hyperparameters for a simple LSTM using Keras - Towards Data Science](https://towardsdatascience.com/choosing-the-right-hyperparameters-for-a-simple-lstm-using-keras-f8e9ed76f046) 
 
  [LSTM 如何优化? - 知乎](https://www.zhihu.com/question/449389956) 
 
@@ -173,7 +173,7 @@ update gate: combine previous hidden state + current hidden state(output)
 
  [Illustrated Guide to LSTM's and GRU's: A step by step explanation - YouTube](https://www.youtube.com/watch?v=8HyCNIVRbSU) 
 
- [Understanding GRU Networks | Towards Data Science](https://towardsdatascience.com/understanding-gru-networks-2ef37df6c9be) 
+ [Understanding GRU Networks - Towards Data Science](https://towardsdatascience.com/understanding-gru-networks-2ef37df6c9be) 
 
 
 
@@ -197,5 +197,5 @@ It is important to know that in actual application, people donot try to reconstr
 
 [What is an Encoder/Decoder in Deep Learning? - Quora](https://www.quora.com/What-is-an-Encoder-Decoder-in-Deep-Learning)  
 
-[What is an encoder decoder model? | by Nechu BM | Towards Data Science](https://towardsdatascience.com/what-is-an-encoder-decoder-model-86b3d57c5e1a) 
+[What is an encoder decoder model? - by Nechu BM - Towards Data Science](https://towardsdatascience.com/what-is-an-encoder-decoder-model-86b3d57c5e1a) 
 

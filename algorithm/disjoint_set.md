@@ -201,13 +201,14 @@ infection过程：把感染过的陆地(1)替换成2
 
 
 
-## Reference
+**参考**
 
-[Lfool's Notes](https://lfool.github.io/LFool-Notes/algorithm/%E5%B9%B6%E6%9F%A5%E9%9B%86-Union-Find.html) 
+- [Lfool's Notes](https://lfool.github.io/LFool-Notes/algorithm/%E5%B9%B6%E6%9F%A5%E9%9B%86-Union-Find.html) 
 
-[GeeksforGeeks](https://www.geeksforgeeks.org/disjoint-set-data-structures/) 
+-  [基础提升 有序表、并查集等 - 左程云算法](https://www.bilibili.com/video/BV1kQ4y1h7ok/?p=12&vd_source=3ee85a74f53c722d5c1f8a852c0c7504) 
+- [GeeksforGeeks](https://www.geeksforgeeks.org/disjoint-set-data-structures/) 
 
-[并查集各种情况下的时间复杂度](http://t.zoukankan.com/FengZeng666-p-14447989.html) 
+- [并查集各种情况下的时间复杂度](http://t.zoukankan.com/FengZeng666-p-14447989.html) 
 
-[wikipedia](https://zh.m.wikipedia.org/zh-hans/%E5%B9%B6%E6%9F%A5%E9%9B%86)  
+- [wikipedia](https://zh.m.wikipedia.org/zh-hans/%E5%B9%B6%E6%9F%A5%E9%9B%86)  
 

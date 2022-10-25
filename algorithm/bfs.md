@@ -1,5 +1,3 @@
-
-
 # BFS
 
 广度优先遍历 (BFS) 呈现出「一层一层向外扩张」的特点，**先看到的结点先遍历，后看到的结点后遍历**，因此「广度优先遍历」可以借助「队列」实现。
@@ -95,7 +93,7 @@ while q:
 
 ## 例题
 
-### 树bfs
+#### 树bfs
 
 [919. 完全二叉树插入器](https://leetcode.cn/problems/complete-binary-tree-inserter/) 
 
@@ -247,13 +245,13 @@ class Solution:
         return max_len
 ```
 
-### 图bfs
+#### 图bfs
 
  [130. 被围绕的区域 ](https://leetcode.cn/problems/surrounded-regions/) 
 
 
 
-### 抽象成图
+#### 抽象成图
 
  [22. 括号生成](https://leetcode.cn/problems/generate-parentheses/)
 
@@ -289,7 +287,7 @@ class Solution:
 
 
 
-## **reference**
+**参考：**
 
 - https://leetcode-cn.com/leetbook/read/bfs/e6occ6/ 
 

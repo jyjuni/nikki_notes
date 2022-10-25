@@ -1,6 +1,6 @@
 # Object Recognition
 
- [Convolutional Neural Networks - Object Detection | Coursera](https://www.coursera.org/learn/convolutional-neural-networks/home/week/3) 
+ [Convolutional Neural Networks - Object Detection - Coursera](https://www.coursera.org/learn/convolutional-neural-networks/home/week/3) 
 
 ## Context
 

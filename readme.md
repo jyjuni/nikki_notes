@@ -11,8 +11,7 @@
 
 ### 算法
 
-+ [双指针](algorithm/double_pointers.md)
-+ [滑动窗口](algorithm/sliding_windows.md)
++ [滑动窗口与双指针](algorithm/sliding_windows.md)
 + [排序算法](algorithm/sort.md)
 + [堆（优先队列）](algorithm/heap.md)
 + [单调队列](algorithm/monotonic_stack.md) 
@@ -21,8 +20,7 @@
 
 ### 树/图
 
-- [图](algorithm/graph.md)
-
++ [图](algorithm/graph.md)
 + [拓扑排序](algorithm/topological_sort.md)
 + [最小生成树(Kruskal/Prim)](algorithm/mst.md)
 + [最短路径(Dijkstra)](algorithm/dijkstra.md)
@@ -31,7 +29,6 @@
 ### 搜索算法
 
 + [二分搜索](algorithm/bisect.md)
-
 + [dfs](algorithm/dfs.md)
 + [bfs](algorithm/bfs.md)
 
@@ -43,8 +40,7 @@
 
 ### 其他
 
-- [根据数据范围推测算法复杂度](algorithm/data_range.md)
-
++ [根据数据范围推测算法复杂度](algorithm/data_range.md)
 + [trie树](algorithm/trie_tree.md)
 + [线段树](algorithm/segment_tree.md)
 + [位运算](algorithm/bit_ops.md)
@@ -60,13 +56,13 @@
 ## 机器学习
 ### **基础知识**
 
-- [ml综述](ml/ml_basics.md)
-- [梯度下降](ml/gd.md)
-- [优化](ml/opt.md)
-- [应用](ml/applications.md)
-- [损失函数](ml/losses.md)
-- [归一化和标准化](ml/normalizations.md)
-- [正则化](ml/regularization.md)
++ [ml综述](ml/ml_basics.md)
++  [梯度下降](ml/gd.md)
++ [优化](ml/opt.md)
++ [应用](ml/applications.md)
++ [损失函数](ml/losses.md)
++ [归一化和标准化](ml/normalizations.md)
++ [正则化](ml/regularization.md)
 
 ### **算法与模型**
 
@@ -95,18 +91,17 @@
 
 ##### **misc**
 
-[进化算法](ml/evolutionary_algo.md)
+- [进化算法](ml/evolutionary_algo.md)
 
 ## NLP
 
 ### **NLP基础**
 
-- [naive-bayes](nlp/naive_bayes.md) [nlp notes](/Users/jinyijia/Desktop/W4705 NLP/notes/NLP 0709.md)
+- [naive-bayes](nlp/naive_bayes.md) [nlp notes](nlp/W4705_notes/NLP 0709.md)
 - [n-gram](nlp/n_grams.md) [nlp notes](/Users/jinyijia/Desktop/W4705 NLP/notes/NLP 0711.md)
 - syntactic parsing
   -  [nlp notes - earley parser](/Users/jinyijia/Desktop/W4705 NLP/notes/NLP 0713.md)
   - [nlp notes - CKY parser](/Users/jinyijia/Desktop/W4705 NLP/notes/NLP 0718.md)
-
 - [word embedding and W2V](nlp/word_embedding.md) [nlp notes](/Users/jinyijia/Desktop/W4705 NLP/notes/NLP 0725.md)
 - [RNN and LSTM](nlp/rnn_lstm.md) [nlp notes](/Users/jinyijia/Desktop/W4705 NLP/notes/NLP 0727.md)
 
@@ -159,13 +154,17 @@
 - [双塔模型(Two-tower)](rec/two_tower.md)
 - [DeepFM](rec/deepfm.md)
 
+### 搜索系统
+
+- [倒排索引](rec/inverted_index.md)
+- [solr/lucene](rec/solr_lucene.md)
+  
+## 强化学习(Reinforcement Learning)
+
 ## Misc
 
-[shell/linux bash](misc/bash.md)
-
-[GCP](misc/gcp.md)
-
-[python](misc/python.md)
-
-[spark](misc/spark.md)
+- [shell/linux bash](misc/bash.md)
+- [GCP](misc/gcp.md)
+- [python](misc/python.md)
+- [spark](misc/spark.md)
 

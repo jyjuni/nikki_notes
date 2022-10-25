@@ -316,7 +316,7 @@ $$
 softmax(z_i) = \frac{\exp(z_i)}{\sum_{j=1}^{k}\exp(z_i)}
 $$
 
-- for **multiple class classification**: The network computes a probability $P(z_i|\mathbf x; \mathbf w)$
+- for **multiple class classification**: The network computes a probability $P(z_i \vert \mathbf x; \mathbf w)$
 - **idea**: turns every $x$ positive and sum to $1$ (probability distribution).
 
 - **"soft-max":** soft approximation for max so that it has a gradient

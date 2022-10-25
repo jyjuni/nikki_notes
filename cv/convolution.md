@@ -172,9 +172,9 @@ or:
 >
 > - response for one window:
 >
->   $f^T_{ij}g = ||f_{ij}|| ||g|| \cos\theta_{ij}$ 
+>   $f^T_{ij}g = \vert \vert f_{ij}\vert \vert  \vert \vert g\vert \vert  \cos\theta_{ij}$ 
 >
->   the norm terms $||f_{ij}||$ and $||g||$ dominate the term, instead of similarity term $\cos\theta_{ij}$
+>   the norm terms $\vert \vert f_{ij}\vert \vert $ and $\vert \vert g\vert \vert $ dominate the term, instead of similarity term $\cos\theta_{ij}$
 
 
 

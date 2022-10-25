@@ -22,7 +22,7 @@
 - a sequential learning process
   - cannot be parallelized
 
-- each predictor learn the **residual**(error) of the previous predictor)
+- each predictor learn the **residual**(error) of the previous predictor
 
 
 
@@ -54,7 +54,7 @@ focus on the harder example
 
 ### GBDT
 
- [Gradient Boosting Trees for Classification: A Beginner’s Guide | by Aratrika Pal | The Startup | Medium](https://medium.com/swlh/gradient-boosting-trees-for-classification-a-beginners-guide-596b594a14ea) 
+ [Gradient Boosting Trees for Classification: A Beginner’s Guide - by Aratrika Pal - The Startup - Medium](https://medium.com/swlh/gradient-boosting-trees-for-classification-a-beginners-guide-596b594a14ea) 
 
 #### learning rate
 

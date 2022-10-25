@@ -10,7 +10,7 @@
 
  [TabNet - GeeksforGeeks](https://www.geeksforgeeks.org/tabnet/)  
 
- [TabNet: The End of Gradient Boosting? | by Adam Shafi | Towards Data Science](https://towardsdatascience.com/tabnet-e1b979907694) 
+ [TabNet: The End of Gradient Boosting? - by Adam Shafi - Towards Data Science](https://towardsdatascience.com/tabnet-e1b979907694) 
 
  [Talks # 4: Sebastien Fischman - Pytorch-TabNet: Beating XGBoost on Tabular Data Using Deep Learning - YouTube](https://www.youtube.com/watch?v=ysBaZO8YmX8) 
 
@@ -47,7 +47,7 @@ FT（+softmax）：软决策，输出概率
 
 #### GLU
 
- [GLU: Gated Linear Unit implementation | by Alvaro Durán Tovar | Deep Learning made easy | Medium](https://medium.com/deeplearningmadeeasy/glu-gated-linear-unit-21e71cd52081)  
+ [GLU: Gated Linear Unit implementation - by Alvaro Durán Tovar - Deep Learning made easy - Medium](https://medium.com/deeplearningmadeeasy/glu-gated-linear-unit-21e71cd52081)  
 
 [Language Modeling with Gated Convolutional Networks](https://arxiv.org/pdf/1612.08083.pdf) 
 $$

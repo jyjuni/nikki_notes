@@ -45,9 +45,9 @@ OCR = Optical Character Recognition 光学文字识别
 
 ## ==Preprocessing==
 
- [Borderless Tables Detection with Deep Learning and OpenCV | by Volodymyr Holomb | Towards Data Science](https://towardsdatascience.com/borderless-tables-detection-with-deep-learning-and-opencv-ebf568580fe2) 
+ [Borderless Tables Detection with Deep Learning and OpenCV - by Volodymyr Holomb - Towards Data Science](https://towardsdatascience.com/borderless-tables-detection-with-deep-learning-and-opencv-ebf568580fe2) 
 
- [Improving the quality of the output | tessdoc](https://tesseract-ocr.github.io/tessdoc/ImproveQuality) 
+ [Improving the quality of the output - tessdoc](https://tesseract-ocr.github.io/tessdoc/ImproveQuality) 
 
 ### OCR Preprocessing overall
 
@@ -159,7 +159,7 @@ th3 = cv.adaptiveThreshold(img,255,cv.ADAPTIVE_THRESH_GAUSSIAN_C,\
 
  [Tesseract OCR in Python with Pytesseract & OpenCV](https://nanonets.com/blog/ocr-with-tesseract/#:~:text=Tesseract%20is%20an%20open%20source,under%20the%20Apache%202.0%20license.)  
 
-[What is Tesseract and how it works? | by BytePace | Medium](https://bytepace.medium.com/what-is-tesseract-and-how-it-works-dfff720f4a32) 
+[What is Tesseract and how it works? - by BytePace - Medium](https://bytepace.medium.com/what-is-tesseract-and-how-it-works-dfff720f4a32) 
 
 
 

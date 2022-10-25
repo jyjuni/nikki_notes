@@ -34,9 +34,6 @@
 >
 > - 如果>=弹出，则相等时用它替换所有相等的值，只保留最后一个（新添加的当前值），这个仅剩的值在遇到更小值弹出时，左边是更小值，右边是新的当前最小值，同样可以正确算出两边情况。
 >
->   
-
-
 
  [768. 最多能完成排序的块 II](https://leetcode.cn/problems/max-chunks-to-make-sorted-ii/) 
 
@@ -105,7 +102,9 @@ class Solution:
 
 常规解法是dfs按顺序构造，时间复杂度是$O(N^2)$：N个node，每个node求max
 
-因为和左、右节点位置和大小有关，这里可以采用单调栈解法，时间复杂度降低至$O(N)$。
+因为和左、右节点位置和大小有关，这里可以采用单调栈解法，时间复杂度降低至$O(N)$。 
+
+[图解LeetCode - 最大二叉树](https://leetcode.cn/problems/maximum-binary-tree/solution/zhua-wa-mou-si-by-muse-77-myd7/) 
 
 ```python
 # 2. 单调栈
@@ -131,10 +130,6 @@ class Solution:
 
         return stack[0].left
 ```
-
-
-
- [654. 最大二叉树](https://leetcode.cn/problems/maximum-binary-tree/) 
 
 ## 参考
 

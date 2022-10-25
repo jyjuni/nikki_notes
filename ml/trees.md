@@ -6,7 +6,7 @@
 
 ## Measures
 
-[Study of The ID3 and C4.5 Learning Algorithms | Open Access Pub](https://openaccesspub.org/jmid/article/1334)  
+[Study of The ID3 and C4.5 Learning Algorithms - Open Access Pub](https://openaccesspub.org/jmid/article/1334)  
 
 [决策树--ID3、C4.5、CART](https://zhuanlan.zhihu.com/p/85731206) 
 
@@ -60,8 +60,6 @@ $$
 $$
 IG = I(Parent) - \sum_j \frac{N(v_j)}{N} I(v_j)
 $$
-
-
 
 ## 决策树算法
 

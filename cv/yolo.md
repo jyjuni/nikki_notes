@@ -141,7 +141,7 @@ CSPNet
 
 #### yolo v5
 
-[Object Detection Algorithm — YOLO v5 Architecture | by Surya Gutta | Analytics Vidhya](https://medium.com/analytics-vidhya/object-detection-algorithm-yolo-v5-architecture-89e0a35472ef) 
+[Object Detection Algorithm — YOLO v5 Architecture - by Surya Gutta - Analytics Vidhya](https://medium.com/analytics-vidhya/object-detection-algorithm-yolo-v5-architecture-89e0a35472ef) 
 
 (no paper, just a github repo)
 
@@ -203,7 +203,7 @@ getting to production quickly: ease-of-use, exportabiity, memory requirements, s
 
 [paper](https://arxiv.org/pdf/1911.11929v1.pdf) 
 
-[Review — CSPNet: A New Backbone That Can Enhance Learning Capability of CNN | by Sik-Ho Tsang | Medium](https://sh-tsang.medium.com/review-cspnet-a-new-backbone-that-can-enhance-learning-capability-of-cnn-da7ca51524bf)  
+[Review — CSPNet: A New Backbone That Can Enhance Learning Capability of CNN - by Sik-Ho Tsang - Medium](https://sh-tsang.medium.com/review-cspnet-a-new-backbone-that-can-enhance-learning-capability-of-cnn-da7ca51524bf)  
 
 [CSPDarkNet结构解析及PyTorch实现 - 知乎](https://zhuanlan.zhihu.com/p/263555912) 
 
@@ -278,7 +278,7 @@ two variants for partial trainsition layers to **maximize the difference of grad
 
 #### Mish激活函数
 
- [Meet Mish — New State of the Art AI Activation Function. The successor to ReLU? | by Less Wright | Medium](https://lessw.medium.com/meet-mish-new-state-of-the-art-ai-activation-function-the-successor-to-relu-846a6d93471f) 
+ [Meet Mish — New State of the Art AI Activation Function. The successor to ReLU? - by Less Wright - Medium](https://lessw.medium.com/meet-mish-new-state-of-the-art-ai-activation-function-the-successor-to-relu-846a6d93471f) 
 
 [paper](https://arxiv.org/abs/1908.08681) 
 
@@ -302,7 +302,7 @@ $$
 - 处处平滑
 - 无正向边界，避免饱和
 
-![Comparison of the Mish function with each activation function. The Mish...  | Download Scientific Diagram](yolo.assets/Comparison-of-the-Mish-function-with-each-activation-function-The-Mish-function-curve-is.ppm)
+![Comparison of the Mish function with each activation function. The Mish...  - Download Scientific Diagram](yolo.assets/Comparison-of-the-Mish-function-with-each-activation-function-The-Mish-function-curve-is.ppm)
 
 #### Dropblock
 
@@ -563,7 +563,7 @@ confidence thresh for non max suppresion
 
  [Detector Loss function (YOLO loss) - Hands-On Convolutional Neural Networks with TensorFlow [Book]](https://www.oreilly.com/library/view/hands-on-convolutional-neural/9781789130331/8881054c-f6e6-485c-9c9e-357285bce60a.xhtml) 
 
- [Real-time Object Detection with YOLO, YOLOv2 and now YOLOv3 | by Jonathan Hui | Medium](https://jonathan-hui.medium.com/real-time-object-detection-with-yolo-yolov2-28b1b93e2088) 
+ [Real-time Object Detection with YOLO, YOLOv2 and now YOLOv3 - by Jonathan Hui - Medium](https://jonathan-hui.medium.com/real-time-object-detection-with-yolo-yolov2-28b1b93e2088) 
 
  [neural networks - Yolo Loss function explanation - Cross Validated](https://stats.stackexchange.com/questions/287486/yolo-loss-function-explanation) 
 

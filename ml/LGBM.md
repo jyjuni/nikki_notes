@@ -4,9 +4,9 @@
 
  [XGBoost vs LightGBM: How Are They Different - neptune.ai](https://neptune.ai/blog/xgboost-vs-lightgbm) 
 
- [What makes LightGBM lightning fast? | by Abhishek Sharma | Towards Data Science](https://towardsdatascience.com/what-makes-lightgbm-lightning-fast-a27cf0d9785e)  
+ [What makes LightGBM lightning fast? - by Abhishek Sharma - Towards Data Science](https://towardsdatascience.com/what-makes-lightgbm-lightning-fast-a27cf0d9785e)  
 
-[Run through LightGBM Fast Training Techniques | by Summer Hu | The Startup | Medium](https://medium.com/swlh/understand-lightgbm-fast-training-techniques-8dab16487cd5) 
+[Run through LightGBM Fast Training Techniques - by Summer Hu - The Startup - Medium](https://medium.com/swlh/understand-lightgbm-fast-training-techniques-8dab16487cd5) 
 
 ### (vs XGBoost: )
 
@@ -112,7 +112,7 @@ For a given categorical feature
 
  [XGBoost Part 3 (of 4): Mathematical Details - YouTube](https://www.youtube.com/watch?v=ZVFeW798-2I) 
 
-[How to Control Your XGBoost Model | Capital One](https://www.capitalone.com/tech/machine-learning/how-to-control-your-xgboost-model/) 
+[How to Control Your XGBoost Model - Capital One](https://www.capitalone.com/tech/machine-learning/how-to-control-your-xgboost-model/) 
 
 [Parallel Gradient Boosting Decision Trees](http://zhanpengfang.github.io/418home.html) 
 

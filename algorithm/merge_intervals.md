@@ -2,10 +2,7 @@
 
 **区间重叠条件：**
 
-```python
-start, end = current_inverval
-for l,r in intervals:
-	if interval[0] <= end and interval[1] >= start: #overlapping
-    ...
-```
+区间按照左边界升序排列，贪心地逐一合并重叠区间即可。
+
+ [56. 合并区间 - 力扣（LeetCode）](https://leetcode.cn/problems/merge-intervals/) 
 

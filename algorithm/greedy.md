@@ -1,12 +1,6 @@
 # 贪心算法
 
-
-
 ## 原理
-
-
-
-## 技巧
 
 1. 实现一个最原始的暴力解法X
 2. 脑补多个贪心策略（如果找到确定是最优策略可以直接实现）
@@ -33,15 +27,13 @@
 
 例: [切金条](###切金条的代价)
 
-
-
 ## 例题
 
-### 加油问题
+##### 加油问题
 
  [Greedy Algorithms — The Car Fueling Problem | by Ayran Olckers | Medium](https://medium.com/@TheGeekiestOne/greedy-algorithms-the-car-fueling-problem-a35ccc9bb011) 
 
-### 戳气球问题
+##### 戳气球问题
 
 [435. 无重叠区间](https://leetcode.cn/problems/non-overlapping-intervals/) 
 
@@ -49,11 +41,11 @@
 
 [757. 设置交集大小至少为2](https://leetcode.cn/problems/set-intersection-size-at-least-two/) 
 
-### 相关：会议室问题
+##### 相关：会议室问题
 
 [253. 会议室 II](https://leetcode.cn/problems/meeting-rooms-ii/)
 
-### 切金条的代价
+##### 切金条的代价
 
 解法：哈夫曼树
 

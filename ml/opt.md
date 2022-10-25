@@ -78,6 +78,6 @@ Adam w/ weight decay
 
 ## 调优
 
-[10 Hyperparameters to keep an eye on for your LSTM model — and other tips | Medium](https://medium.com/geekculture/10-hyperparameters-to-keep-an-eye-on-for-your-lstm-model-and-other-tips-f0ff5b63fcd4) 
+[10 Hyperparameters to keep an eye on for your LSTM model — and other tips - Medium](https://medium.com/geekculture/10-hyperparameters-to-keep-an-eye-on-for-your-lstm-model-and-other-tips-f0ff5b63fcd4) 
 
  [GA（遗传算法）优化LSTM神经网络-CSDN博客](https://blog.csdn.net/Vertira/article/details/122403571) 

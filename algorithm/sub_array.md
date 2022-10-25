@@ -125,7 +125,7 @@ class Solution:
 ### 二维动态规划
 [1143. 最长公共子序列](https://leetcode.cn/problems/longest-common-subsequence/)
 > $dp[i][j]$表示$text1[:i], text2[:j]$的最长公共子序列长度，不一定包含$i$.
-> $$ 
+> $$
 > dp[i][j] = 
 > \begin{cases}
 > dp[i-1][j-1]+1 & \quad if \ text1[i-1]==text2[j-1] \\

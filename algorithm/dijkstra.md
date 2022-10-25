@@ -32,3 +32,7 @@
   - 通过自己实现堆的方式，手动向上heapify可以把改写复杂度降到O(logN)
 
 [实现](https://github.com/Aaron-TangCode/zuoshen/blob/master/src/com/tanghainlin/basic_class_06/Code_06_Dijkstra.java) 
+
+**参考 **
+
+- [详解前缀树和贪心算法 - 左程云算法](https://www.bilibili.com/video/BV1kQ4y1h7ok?p=8&vd_source=3ee85a74f53c722d5c1f8a852c0c7504) 

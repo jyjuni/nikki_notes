@@ -243,7 +243,7 @@ lazy：
 
 ## 例题
 
-### 我的日程安排表I~III
+#### 我的日程安排表I~III
 
 [729. 我的日程安排表 I](https://leetcode.cn/problems/my-calendar-i/)
 
@@ -251,7 +251,7 @@ lazy：
 
 [732. 我的日程安排表 III](https://leetcode.cn/problems/my-calendar-iii/)
 
-### 区域和检索（数组不可变、数组可变、二维可变）
+#### 区域和检索（数组不可变、数组可变、二维可变）
 
 [303. 区域和检索 - 数组不可变](https://leetcode.cn/problems/range-sum-query-immutable/) 
 
@@ -259,10 +259,18 @@ lazy：
 
 [308. 二维区域和检索 - 可变](https://leetcode.cn/problems/range-sum-query-2d-mutable/) 
 
-### 其他
+#### 其他
 
 [715. Range 模块](https://leetcode.cn/problems/range-module/)
 
 [933. 最近的请求次数](https://leetcode.cn/problems/number-of-recent-calls/)
 
 [699. 掉落的方块](https://leetcode.cn/problems/falling-squares/)
+
+
+
+-----
+
+**参考**：
+
+-  [左程云-算法：线段树](https://www.bilibili.com/video/BV1cY411s7TZ/?p=5&vd_source=3ee85a74f53c722d5c1f8a852c0c7504) 

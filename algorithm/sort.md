@@ -1,6 +1,5 @@
 # 排序算法
-https://leetcode-cn.com/problems/sort-an-array/submissions/ 
-215 169 274
+
 
 ## 快速排序
 快排1.0：每次分为<=和>，每次可以确定中间一个
@@ -19,9 +18,88 @@ https://leetcode-cn.com/problems/sort-an-array/submissions/
 
 
 
+### 实现
+
+```python
+# 快速排序
+import random
+class Solution:
+    def sortArray(self, nums: List[int]) -> List[int]:
+        def quickSort(nums, start, end):
+            if start >= end:
+                return 
+            i = partition(nums, start, end)
+            quickSort(nums, start, i-1)
+            quickSort(nums, i+1, end)
+            return
+
+        def partition(nums, start, end):
+            ra = random.randint(start,end)
+            nums[start], nums[ra] = nums[ra], nums[start]
+            pivot = nums[start]
+            l, r = start, end
+            while l<r:
+                while l<r and nums[r]>= pivot:
+                    r-=1
+                while l<r and nums[l]<= pivot:
+                    l+=1
+                nums[l], nums[r] = nums[r], nums[l]
+                # print(nums, nums[l], nums[r])
+            nums[start], nums[l] = nums[l], nums[start]
+            # print(start, end, nums[start:end+1])
+            return l
+
+
+        quickSort(nums, 0, len(nums)-1)
+        return nums
+```
+
+
+
 ## 归并排序
 
-### 归并法（递归）
+### 实现
+
+```python
+# 归并排序
+class Solution:
+    def sortArray(self, nums: List[int]) -> List[int]:
+        def mergeSort(l, r):
+            if l >= r:
+                return
+            m = (l+r)//2
+            mergeSort(l, m)
+            mergeSort(m+1, r)
+            merge(l, m, r)
+            # print(nums)
+            return
+
+        def merge(l, m, r):
+            #first [l...m], second [m+1...r]
+            tmp1, tmp2 = nums[l:m+1], nums[m+1:r+1] 
+            i, j = 0, 0 #index for tmp1, tmp2
+            for k in range(l, r+1):
+                if i == len(tmp1): #nums1 depleted
+                    nums[k] = tmp2[j]
+                    j+=1
+                elif j == len(tmp2): #nums2 depleted
+                    nums[k] = tmp1[i]
+                    i+=1
+                elif tmp1[i] < tmp2[j]: #append smaller: num1
+                    nums[k] = tmp1[i]
+                    i+=1
+                else: 
+                    nums[k] = tmp2[j]
+                    j+=1
+            return 
+
+        mergeSort(0, len(nums)-1)
+        return nums
+```
+
+
+
+### 归并法扩展（递归）
 
 在归并的基础上，通过改变归并排序的merge操作，记录需要的信息，达到O(NlogN)复杂度的计算。
 
@@ -44,11 +122,13 @@ return：左半小和总数+ 右半小和总数 + 当前merge小和总数
 
 **逆序对问题**
 
+[315. 计算右侧小于当前元素的个数](https://leetcode.cn/problems/count-of-smaller-numbers-after-self/) 
+
 >  在一个数组中，左边的数如果比右边的数大，则这两个数构成一个逆序对。打印所有逆序对。
 
-和小和问题思路类似：小和求的是右侧比左侧大的个数，逆序对求的是右侧比左侧小的个数。merge时如果右侧<左侧则累加个数，相等时左侧先加（因为算p2-l，需要保证当前位置和它前边不包含相等值）。
+和小和问题思路类似：小和求的是右侧比左侧大的个数，逆序对求的是右侧比左侧小的个数。merge时如果右侧<左侧则累加个数，相等时左侧先加（因为算p2-l，需要保证当前位置和它前边不包含相等值）。 
 
-
+### 
 
 ## 不基于比较的排序
 
@@ -85,7 +165,9 @@ return：左半小和总数+ 右半小和总数 + 当前merge小和总数
   - 原数组从右往左，根据词频前缀和-1输出到辅助数组的对应位置
   - 巧妙的利用了先进先出原则
 
+## 堆排序
 
+见[堆实现](heap.md###堆实现)。
 
 ## 总结
 
@@ -104,3 +186,18 @@ return：左半小和总数+ 右半小和总数 + 当前merge小和总数
    - 基础类型 - 稳定性没用，快排
 
    - 非基础类型 - 可能需要稳定，归并
+
+## 例题
+
+##### TopK
+
+ [215. 数组中的第K个最大元素](https://leetcode.cn/problems/kth-largest-element-in-an-array/) 
+
+##### 排序链表
+
+ [148. 排序链表](https://leetcode.cn/problems/sort-list/) 
+
+##### 其他例题
+
+169 274
+

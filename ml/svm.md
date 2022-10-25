@@ -14,15 +14,15 @@ idea:  find the db s.t.  if preturb any of the example, the classification won't
 
 <img src="svm.assets/Screen Shot 2022-08-21 at 1.55.44 PM.png" alt="Screen Shot 2022-08-21 at 1.55.44 PM" style="zoom:25%;" />
 
-- **$\lambda ||w||_2^2$ - regularization term:** find the db that push the margin as far way as possible
+- **$\lambda \vert\vert w\vert\vert_2^2$ - regularization term:** find the db that push the margin as far way as possible
 
-  - margin distance is $\frac{2}{||\mathbf w||}$ 
+  - margin distance is $\frac{2}{\vert\vert\mathbf w\vert\vert}$ 
 
-    - [why margin equals $\frac{2}{\|\mathbf{w}\|}$](####margin)
+    - [why margin equals $\frac{2}{\vert\vert\mathbf w\vert\vert}$](####margin)
 
-  - convex: $\frac{2}{||\mathbf w||}$  is not convex, but $||\mathbf w||$ is
+  - convex: $\frac{2}{\vert\vert\mathbf w\vert\vert}$  is not convex, but $$\vert\vert\mathbf w\vert\vert$$ is
 
-    so solve $\min ||\mathbf w||$ instead of  $\max \frac{2}{||\mathbf w||}$
+    so solve $\min \vert\vert\mathbf w\vert\vert$ instead of  $\max \frac{2}{\vert\vert\mathbf w\vert\vert}$
 
   - use normal vector w to represent the plane
 
@@ -42,10 +42,10 @@ idea:  find the db s.t.  if preturb any of the example, the classification won't
 
 ## reference
 
-#### margin
+#### \vert\vert\mathbf w\vert\vertmargin
 
-why margin equal to $\frac{2}{\|\mathbf{w}\|}$: 
+why margin equal to $\frac{2}{\vert\vert\mathbf w\vert\vert}$: 
 
-[linear algebra - Why is the SVM margin equal to $\frac{2}{\|\mathbf{w}\|}$? - Mathematics Stack Exchange](https://math.stackexchange.com/questions/1305925/why-is-the-svm-margin-equal-to-frac2-mathbfw)  
+[linear algebra - Why is the SVM margin equal to $\frac{2}{\vert\vert\mathbf w\vert\vert}$? - Mathematics Stack Exchange](https://math.stackexchange.com/questions/1305925/why-is-the-svm-margin-equal-to-frac2-mathbfw)  
 
 [MIT OCW - 16.  Learning: Support Vector Machines - YouTube](https://youtu.be/_PwhiWxHK8o?t=1020) 

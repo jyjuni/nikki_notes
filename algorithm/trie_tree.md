@@ -167,14 +167,6 @@ class Solution {
 
 空间复杂度：O(n×C)，其中C=26为字符集大小
 
-
-
-----
-
-[Lfool's note on Trie Tree](https://lfool.github.io/LFool-Notes/algorithm/%E8%AF%A6%E8%A7%A3%E5%89%8D%E7%BC%80%E6%A0%91TrieTree.html)
-
-
-
 ## 例题
 
 [729. 我的日程安排表 I](https://leetcode.cn/problems/my-calendar-i/)
@@ -191,3 +183,9 @@ class Solution {
 
 [699. 掉落的方块](https://leetcode.cn/problems/falling-squares/)
 
+
+
+##### 参考：
+
+- [Lfool's note on Trie Tree](https://lfool.github.io/LFool-Notes/algorithm/%E8%AF%A6%E8%A7%A3%E5%89%8D%E7%BC%80%E6%A0%91TrieTree.html)
+-  [详解前缀树 - 左程云算法](https://www.bilibili.com/video/BV1kQ4y1h7ok?p=9&vd_source=3ee85a74f53c722d5c1f8a852c0c7504) 

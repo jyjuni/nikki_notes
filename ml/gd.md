@@ -3,13 +3,13 @@ b梯度下降 Gradient Descent
 ## 梯度消失与爆炸问题
 ### 梯度消失
 
-$|gradient| \rightarrow 0$
-- RNN, $|single\ gradient| < 1$
+$\vert gradient\vert  \rightarrow 0$
+- RNN, $\vert single\ gradient\vert  < 1$
 - sigmoid
 
 ### 梯度爆炸
-$|gradient| \rightarrow \infin$
-- RNN, $|single\ gradient| > 1$
+$\vert gradient\vert  \rightarrow \infin$
+- RNN, $\vert single\ gradient\vert  > 1$
 
 ## 激活函数
 > "I think we are in a stage of alchemy and we haven't invented chemistry yet."
