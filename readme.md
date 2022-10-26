@@ -98,21 +98,21 @@
 ### **NLP基础**
 
 - [naive-bayes](nlp/naive_bayes.md) [nlp notes](nlp/W4705_notes/NLP 0709.md)
-- [n-gram](nlp/n_grams.md) [nlp notes](/Users/jinyijia/Desktop/W4705 NLP/notes/NLP 0711.md)
+- [n-gram](nlp/n_grams.md) [nlp notes](nlp/W4705_notes/NLP 0711.md)
 - syntactic parsing
-  -  [nlp notes - earley parser](/Users/jinyijia/Desktop/W4705 NLP/notes/NLP 0713.md)
-  - [nlp notes - CKY parser](/Users/jinyijia/Desktop/W4705 NLP/notes/NLP 0718.md)
-- [word embedding and W2V](nlp/word_embedding.md) [nlp notes](/Users/jinyijia/Desktop/W4705 NLP/notes/NLP 0725.md)
-- [RNN and LSTM](nlp/rnn_lstm.md) [nlp notes](/Users/jinyijia/Desktop/W4705 NLP/notes/NLP 0727.md)
+  -  [nlp notes - earley parser](nlp/W4705_notes/NLP 0713.md)
+  - [nlp notes - CKY parser](nlp/W4705_notes/NLP 0718.md)
+- [word embedding and W2V](nlp/word_embedding.md) [nlp notes](nlp/W4705_notes/NLP 0725.md)
+- [RNN and LSTM](nlp/rnn_lstm.md) [nlp notes](nlp/W4705_notes/NLP 0727.md)
 
 ### **算法与应用场景**
 
-- [attention](nlp/attention.md) [nlp notes](/Users/jinyijia/Desktop/W4705 NLP/notes/NLP 0727.md)
-- [ELMo](nlp/elmo.md) [nlp notes](/Users/jinyijia/Desktop/W4705 NLP/notes/NLP 0801.md)
-- [transformer](nlp/transformer.md) [nlp notes](/Users/jinyijia/Desktop/W4705 NLP/notes/NLP 0801.md)
-- [BERT](nlp/bert.md) [nlp notes](/Users/jinyijia/Desktop/W4705 NLP/notes/NLP 0801.md)
+- [attention](nlp/attention.md) [nlp notes](nlp/W4705_notes/NLP 0727.md)
+- [ELMo](nlp/elmo.md) [nlp notes](nlp/W4705_notes/NLP 0801.md)
+- [transformer](nlp/transformer.md) [nlp notes](nlp/W4705_notes/NLP 0801.md)
+- [BERT](nlp/bert.md) [nlp notes](nlp/W4705_notes/NLP 0801.md)
 - [XLNET](nlp/xlnet.md)
-- [MT]() [nlp notes](/Users/jinyijia/Desktop/W4705 NLP/notes/NLP 0803.md)
+- [MT]() [nlp notes](nlp/W4705_notes/NLP 0803.md)
 
 ## CV
 
