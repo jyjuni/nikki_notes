@@ -109,6 +109,49 @@ class Solution:
 
 [315. 计算右侧小于当前元素的个数 - 力扣（LeetCode）](https://leetcode.cn/problems/count-of-smaller-numbers-after-self/) 
 
+```python
+class Solution:
+    def countSmaller(self, nums: List[int]) -> List[int]:
+        pairs = [(i,v) for i,v in enumerate(nums)]
+        cnt = [0] * len(nums)
+
+        def merge_sort(l,r):
+            if l>=r:
+                return
+            m = (l+r)//2
+            merge_sort(l, m)
+            merge_sort(m+1, r)
+            merge(l, m, r)
+
+        def merge(l,m,r):
+            tmp1, tmp2 = pairs[l:m+1], pairs[m+1:r+1]
+            # print(a,b)
+            i,j = 0,0
+            for k in range(l, r+1):
+                if i==len(tmp1):
+                    pairs[k] = tmp2[j]
+                    j+=1
+                elif j==len(tmp2):
+                    pairs[k] = tmp1[i]
+                    cnt[tmp1[i][0]] += j
+                    i+=1
+                else:
+                    if tmp1[i][1] <= tmp2[j][1]: #右侧大
+                        pairs[k] = tmp1[i]
+                        cnt[tmp1[i][0]] += j
+                        i+=1
+                    else: #左侧大
+                        pairs[k] = tmp2[j]
+                        j+=1
+            return 
+
+            
+        merge_sort(0, len(nums)-1)
+        # print(cnt)
+        return cnt
+        # print(nums)
+```
+
 merge时：
 
 - 只有在左边指向数小（拷贝左侧）时加`(r+1-p2)`个小数和，挪右侧则不用加
